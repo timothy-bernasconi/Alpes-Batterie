@@ -1,0 +1,75 @@
+.wrapper {
+  max-width: 350px;
+ height: auto;
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.471);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 2rem 40px 2rem auto;
+  background: rgba(252, 252, 252, 0.041);
+  backdrop-filter: blur(1px);  
+  transition: 0.6s ease;
+
+  h2 {
+    text-align: center;
+    color: white;
+  }
+  
+}
+
+.wrapper:hover {
+    background: rgba(252, 252, 252, 0.166);
+    .hours p {
+       color: #e4e9ea;
+    }
+}
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2d3436;
+  font-size: 1.5rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f2f6;
+  
+}
+
+.group:last-child {
+  border-bottom: none;
+}
+
+
+.day {
+  font-weight: 700;
+  color: red; 
+  width: 100px;
+}
+
+.hours {
+  text-align: left;
+}
+
+.hours p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #d0d6d8;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 400px) {
+  .group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hours {
+    text-align: left;
+    margin-top: 5px;
+  }
+}

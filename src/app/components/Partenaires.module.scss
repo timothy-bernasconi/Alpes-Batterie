@@ -1,0 +1,51 @@
+.partnersSection {
+  padding: 40px 0; 
+  background-color: #1a1a1a; 
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+
+  h2 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.gridWrapper {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partnerCard {
+  background: #111; 
+  width: 140px; 
+  height: 60px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #504f4f;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: #d11c1c;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    background: #000;
+  }
+}
+
+.logo {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+  filter: brightness(0) invert(1) opacity(0.4); // Logos en blanc discret
+  transition: 0.3s;
+
+  .partnerCard:hover & {
+    filter: brightness(0) invert(1) opacity(1); // S'illumine au survol
+  }
+}

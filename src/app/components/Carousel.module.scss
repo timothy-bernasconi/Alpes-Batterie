@@ -1,0 +1,90 @@
+.carouselContainer {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  z-index: 1;
+  margin: 0;
+  border-top: 15px solid white;
+  border-bottom: 15px solid white;
+   
+  @media (max-width: 768px) {
+    aspect-ratio: 4 / 3;
+    margin-top: 4rem;
+  }
+
+  .track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+  }
+
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative; 
+
+    .image {
+      object-fit: cover; 
+      object-position: top;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+  .caption {
+        text-align: center;
+    z-index: 10;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.195);
+    backdrop-filter: blur(5px);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+
+    h3 { font-size: 1.8rem; margin: 0; }
+    p { margin: 0.5rem 0 1.2rem; opacity: 0.9; }
+
+    .cta {
+      background: #b82f29;;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+      &:hover { background: #ff00006c; border: 1px solid rgba(255, 255, 255, 0.463);}
+    }
+  }
+
+  .navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(53, 53, 53);
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s;
+    z-index: 20;
+
+    &:hover { background: rgba(255, 255, 255, 0.4); }
+    &.prev { left: 20px; }
+    &.next { right: 20px; }
+  }
+}
