@@ -50,6 +50,18 @@ export default function Footer() {
 
       <div className={styles.bottomBar}>
         <p>© {new Date().getFullYear()} Site réalisé par AgirEnCom - Tous droits réservés.</p>
+        
+        <div className={styles.socials}>
+          <p> <i className="fa-brands fa-facebook"></i></p>
+          <p>    <i className="fa-brands fa-instagram"></i> </p>
+          <p>       <i className="fa-brands fa-linkedin-in"></i> </p>
+          <p>      <i className="fa-brands fa-youtube"></i> </p>
+            
+      
+   
+    
+              </div>
+        
       </div>
     </footer>
   );

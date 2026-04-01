@@ -66,6 +66,7 @@ const Competences = () => {
 
           <div className={styles.button}>
             <button>Voir notre catalogue</button>
+            <button>Rechercher une batterie</button>
           </div>
          
 

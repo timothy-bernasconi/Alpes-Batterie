@@ -1,11 +1,26 @@
+"use client"
+
 import React from 'react'
-import ReactPlayer from 'react-player'
+import YouTube from 'react-youtube'
 import styles from './Video.module.scss'
 
-const Video = () => {
+const Video = ({ videoId, title, channel }) => {
+  const opts = {
+    width: '100%',
+    playerVars: {
+      autoplay: 0,
+    },
+  }
+
   return (
     <div className={styles.wrapper}>
-        <ReactPlayer src='https://www.youtube.com/watch?v=mEYvAeREpZc&t=46s' />
+      <div className={styles.playerCard}>
+        <YouTube videoId={videoId} opts={opts} />
+        <div className={styles.info}>
+          <h3>{title}</h3>
+          <p>{channel}</p>
+        </div>
+      </div>
     </div>
   )
 }

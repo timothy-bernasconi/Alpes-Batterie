@@ -35,16 +35,19 @@
   }
 }
 
-// Optionnel : Petite retouche sur ton bouton pour le rendre plus "moderne"
+
 .button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   button {
-    // ... tes styles actuels
+
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
 
     &:hover {
-      background-color: #6d1a1c; // Un rouge plus sombre au survol
+      background-color: #6d1a1c; 
       transform: scale(1.05);
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }

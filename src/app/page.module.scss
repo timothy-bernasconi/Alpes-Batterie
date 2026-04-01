@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+.videoGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 6rem;
+
+  & > * {
+    flex: 1;
+    min-width: 0; 
+  }
+
+ @media (max-width: 1024px) {
+
+    flex-direction: column;
+   
+}
+
+}
