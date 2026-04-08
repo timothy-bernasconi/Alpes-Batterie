@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 95vh; 
+  overflow: hidden;
+
+  .bgVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transform: translate(-50%, -50%);
+    z-index: -1; 
+  }
+
+  .mainTitle {
+    position: absolute;
+    left: 5%;        
+    top: 30%;        
+    transform: translateY(-50%); 
+    
+    z-index: 10;
+    color: #ffffff;
+    font-size: 3.5rem; 
+    max-width: 40%;  
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.1;
+  
+  }
+
+
+
+.phonesPosition {
+  position: absolute;
+  left: 5%;           
+  top: 55%;          
+  z-index: 10;
+  display: flex;
+  gap: 20px;
+}
+
+
+.mainTitle {
+  top: 35%; 
+}
+
+  .btn {
+         background: #902326;
+    color: #f8f9fa;
+    padding: 1.2rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+    &:hover {
+      background: #f8f9fa;
+      color: #902326;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(144, 35, 38, 0.2);
+    
+  }
+  }
+}
+
+
+

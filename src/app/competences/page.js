@@ -1,5 +1,6 @@
 import React from 'react'
 import Competences from './Competences'
+import styles from './page.module.scss'
 
 const page = () => {
   return (

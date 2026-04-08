@@ -28,7 +28,7 @@ const Header = () => {
       ${isOpen ? styles.menuOpen : ''}
     `}>
       <div className={styles.logo}>
-        <img src="./assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png" alt="" />
+        <img src="/assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png" alt="" />
         </div>
 
  
@@ -49,7 +49,6 @@ const Header = () => {
         <li><Link href="/actualites" onClick={closeMenu}>Actualités</Link></li>
         <li><Link href="/catalogue" onClick={closeMenu}>Catalogue</Link></li>
         <li><Link href="/competences" onClick={closeMenu}>Nos Compétences</Link></li>
-        <li><Link href="/professionnels" onClick={closeMenu}>Professionnels</Link></li>
         <li><Link href="/contact" onClick={closeMenu}>Contact</Link></li>
       </ul>
     </nav>

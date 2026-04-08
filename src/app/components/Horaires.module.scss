@@ -1,15 +1,23 @@
 .wrapper {
-  max-width: 350px;
- height: auto;
+max-width: 350px;
+  height: auto;
   padding: 1.5rem;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.471);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4); 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); 
   font-family: 'Segoe UI', Roboto, sans-serif;
-  margin: 2rem 40px 2rem auto;
-  background: rgba(252, 252, 252, 0.041);
-  backdrop-filter: blur(1px);  
+  margin: 12rem 70px 0rem auto;
+  background: rgba(0, 0, 0, 0.027); 
+  backdrop-filter: blur(25px); 
+  -webkit-backdrop-filter: blur(25px); 
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   transition: 0.6s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
 
   h2 {
     text-align: center;
@@ -27,7 +35,7 @@
 .title {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #2d3436;
+  color: #5d6364;
   font-size: 1.5rem;
 }
 
@@ -47,7 +55,7 @@
 
 .day {
   font-weight: 700;
-  color: red; 
+  color: #ffffff; 
   width: 100px;
 }
 
@@ -58,7 +66,7 @@
 .hours p {
   margin: 0;
   font-size: 0.9rem;
-  color: #d0d6d8;
+  color: #ffffff;
   line-height: 1.4;
 }
 

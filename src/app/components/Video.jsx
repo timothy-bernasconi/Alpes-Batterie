@@ -17,8 +17,7 @@ const Video = ({ videoId, title, channel }) => {
       <div className={styles.playerCard}>
         <YouTube videoId={videoId} opts={opts} />
         <div className={styles.info}>
-          <h3>{title}</h3>
-          <p>{channel}</p>
+          
         </div>
       </div>
     </div>
