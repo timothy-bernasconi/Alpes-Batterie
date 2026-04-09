@@ -25,7 +25,7 @@ const Competences = () => {
 
         <div className={styles.serviceCard}>
           <h3>Changement piles de montre </h3>
-          <p>Plus qu'un simple objet, votre montre est souvent un souvenir ou un héritage précieux que nous traitons avec le plus grand soin. Notre service de remplacement utilise des piles de haute qualité pour préserver l'intégrité de votre pièce et lui redonner vie durablement.</p>
+          <p>Plus qu'un simple objet, votre montre est souvent un souvenir ou un héritage précieux que nous traitons avec le plus grand soin. Notre service de remplacement utilise des piles de haute qualité pour préserver l'intégrité de votre pièce et lui redonner vie.</p>
         </div>
 
         <div className={styles.serviceCard}>
@@ -34,18 +34,18 @@ const Competences = () => {
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Une présence forte en région</h3>
-          <p>Un partenaire stratégique pour les entreprises de Haute-Savoie, de l’Ain et de Suisse, dédié à une expérience client d'excellence.</p>
+          <h3>Mise en place d’un coupe-circuit </h3>
+          <p>Le coupe-circuit est une mesure de sécurité cruciale pour tout véhicule qui n’est pas utilisé au quotidien. Il permet d’éviter les risques de fuites électriques susceptibles de décharger votre batterie prématurément. </p>
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Livraison gratuite pour les professionnels</h3>
-          <p>Une logistique de proximité avec des livraisons hebdomadaires gratuites couvrant l'ensemble du Grand Genève, de la Vallée de l'Arve jusqu'au Pays du Mont-Blanc et au littoral Lémanique.</p>
+          <h3>Batterie de démarrage (Camion)</h3>
+          <p>Nous offrons des batteries de démarrage solides, conçues pour délivrer une puissance optimale et garantir une longévité accrue, même dans les situations les plus exigeantes.</p>
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Découvrez notre gamme</h3>
-          <p>De l’énergie de démarrage (auto, moto, poids lourds, marine) aux solutions techniques avancées, nous couvrons l’intégralité de vos besoins en stockage et conversion d’énergie : piles industrielles, éclairage haute performance et équipements de charge professionnels.</p>
+          <h3>Camping-Car : </h3>
+          <p>Un camping-car est une maison sur roues, nécessitant une alimentation constante pour tout, de l’éclairage aux appareils électroménagers. Nos batteries pour camping-cars sont conçues pour fournir une puissance stable et fiable</p>
         </div>
 
 
@@ -65,8 +65,8 @@ const Competences = () => {
       </div>
 
           <div className={styles.button}>
-            <button>Voir notre catalogue</button>
-            <button>Rechercher une batterie</button>
+            <a href="/catalogue"><button>Voir notre catalogue</button></a>
+           <a href="https://www.bannerbatterien.com/fr/Affectations-batteries/VL-VUL"><button>Rechercher une batterie</button></a>
           </div>
          
 

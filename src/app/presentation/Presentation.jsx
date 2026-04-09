@@ -28,32 +28,32 @@ const Presentation = () => {
      
       <div className={styles.gridServices}>
         <div className={styles.serviceCard}>
-          <h3>Notre expertise</h3>
+          <h3><i className="fa-regular fa-star"></i>Notre expertise</h3>
           <p>Spécialistes en batteries, piles, accumulateurs et solutions solaires avec des partenaires de prestige comme Banner, Fulmen ou Varta.</p>
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Un choix vaste et qualitatif</h3>
+          <h3><i className="fa-solid fa-boxes-stacked"></i>Un choix vaste et qualitatif</h3>
           <p>Un assortiment vaste pour particuliers et professionnels, des piles classiques aux solutions techniques les plus complexes.</p>
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Une équipe à votre écoute</h3>
+          <h3><i className="fa-solid fa-people-group"></i>Une équipe à votre écoute</h3>
           <p>Une équipe formée aux dernières innovations pour vous guider vers le produit le plus adapté à votre projet.</p>
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Une présence forte en région</h3>
+          <h3><i className="fa-solid fa-heart"></i>Présence forte en région</h3>
           <p>Un partenaire stratégique pour les entreprises de Haute-Savoie, de l’Ain et de Suisse, dédié à une expérience client d'excellence.</p>
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Livraison gratuite pour les professionnels</h3>
+          <h3><i className="fa-solid fa-dolly"></i>Livraison pro gratuite</h3>
           <p>Une logistique de proximité avec des livraisons hebdomadaires gratuites couvrant l'ensemble du Grand Genève, de la Vallée de l'Arve jusqu'au Pays du Mont-Blanc et au littoral Lémanique.</p>
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Découvrez notre gamme</h3>
+          <h3><i className="fa-solid fa-battery-full"></i>Découvrez notre gamme</h3>
           <p>De l’énergie de démarrage (auto, moto, poids lourds, marine) aux solutions techniques avancées, nous couvrons l’intégralité de vos besoins en stockage et conversion d’énergie : piles industrielles, éclairage haute performance et équipements de charge professionnels.</p>
         </div>
 

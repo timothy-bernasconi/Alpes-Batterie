@@ -5,6 +5,7 @@ import styles from './Form.module.scss'
 
 function MyForm() {
   const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
   const [type, setType] = useState("Renseignements techniques");
@@ -15,16 +16,22 @@ function MyForm() {
 
     <div className={styles.group}>
 
-        <h1 className={styles.title}>Espace Professionnel</h1>
-        <p className={styles.paragraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum et deleniti quidem perspiciatis voluptatum magni, hic, enim ut eligendi nesciunt ea corporis in. Soluta, temporibus consequuntur in non illum eum?</p>
-
         <form className={styles.wrapper}>
 
-      <label className={styles.input}>Nom *
+          
+          <label className={styles.input}>Nom *
         <input
           type="text" 
           value={name}
           onChange={(e) => setName(e.target.value)}
+        />
+      </label>
+
+      <label className={styles.input}>Prénom *
+        <input
+          type="text" 
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
         />
       </label>
  

@@ -1,9 +1,10 @@
 import React from 'react'
 import Presentation from './Presentation'
+import styles from './page.module.scss'
 
 const page = () => {
   return (
-    <div>
+    <div className={styles.container}>
    <Presentation />
 </div>
   )
