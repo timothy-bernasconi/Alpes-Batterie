@@ -46,6 +46,7 @@ const Page = () => {
      <Hero 
       videoSrc="/assets/video/thonon.mp4" 
       fallbackImage="/assets/fallback-annemasse.jpg"
+      titre = "Alpes Batterie Thonon"
     />
 
 

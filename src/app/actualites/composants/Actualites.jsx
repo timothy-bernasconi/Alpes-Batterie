@@ -2,7 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
-import NewCard from './NewCard';
+import Link from 'next/link';
+import NewCard from './NewCard'; 
+import styles from './Actualites.module.scss';
 
 const Actualites = () => {
   const [articles, setArticles] = useState([]);
@@ -16,47 +18,43 @@ const Actualites = () => {
       header: true,
       skipEmptyLines: true,
       complete: (results) => {
-        // Nettoyage des clés (enlève les caractères invisibles de Google et les espaces)
         const cleanData = results.data.map(row => {
           const newRow = {};
           for (let key in row) {
             const cleanKey = key.replace(/^\ufeff/, "").trim();
-            newRow[cleanKey] = row[key];
+            let value = row[key];
+            if (cleanKey === "Lien_Image" && value && value.includes("drive.google.com")) {
+              const fileId = value.split('/d/')[1]?.split('/')[0] || value.split('id=')[1]?.split('&')[0];
+              if (fileId) value = `https://drive.google.com/uc?export=view&id=${fileId}`;
+            }
+            newRow[cleanKey] = value;
           }
           return newRow;
         });
 
-        // Filtrage pour ne garder que les lignes avec un titre
         const dataValide = cleanData.filter(item => item.Titre && item.Titre.trim() !== "");
-        
-        // On inverse pour avoir les plus récents en haut
         setArticles(dataValide.reverse());
-        setChargement(false);
-      },
-      error: (error) => {
-        console.error("Erreur de chargement CSV:", error);
         setChargement(false);
       }
     });
   }, []);
 
-  if (chargement) return <div className="loader">Chargement des actualités...</div>;
+  if (chargement) return <div className={styles.loader}>Chargement du blog...</div>;
 
   return (
-    <section className="actualites-section" style={{ padding: '20px' }}>
-      <h1 style={{ textAlign: 'center' }}>Nos Actualités</h1>
-      <div className="actualites-grid" style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-        gap: '20px'
-      }}>
-        {articles.length > 0 ? (
-          articles.map((actu, index) => (
-            <NewCard key={index} data={actu} />
-          ))
-        ) : (
-          <p>Aucune actualité pour le moment.</p>
-        )}
+    <section className={styles.actualitesSection}>
+      <h1 className={styles.title}>Notre Blog & Actualités</h1>
+      <div className={styles.actualitesGrid}>
+        {articles.map((actu, index) => (
+        
+          <Link 
+            href={`/actualites/${encodeURIComponent(actu.Titre)}`} 
+            key={index} 
+            className={styles.cardLink}
+          >
+            <NewCard data={actu} />
+          </Link>
+        ))}
       </div>
     </section>
   );

@@ -60,25 +60,11 @@
     margin-bottom: 4rem;
 
     h1 {
-      color: #902326;
-      font-size: clamp(2rem, 5vw, 2.8rem); 
-      font-weight: 800;
-      letter-spacing: -1px;
-      margin-bottom: 1.5rem;
-      position: relative;
-      display: inline-block;
+       font-size: 3.5rem;
+    color: #9e0906;
+    text-transform: uppercase;
+    text-align: center;
 
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 4px;
-        background: #902326;
-        border-radius: 2px;
-      }
     }
 
     .introText {

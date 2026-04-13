@@ -46,12 +46,15 @@ const Page = () => {
        <Hero 
       videoSrc="/assets/video/sallanches.mp4" 
       fallbackImage="/assets/fallback-annemasse.jpg"
+      titre = "Alpes Batterie Sallanches"
+      
     />
 
       <Equipe 
        titre = "Notre équipe"
        presentationEquipe = {presentationEquipe}
        equipeAnnemasse={equipeSallanches}
+       
       />
       
    

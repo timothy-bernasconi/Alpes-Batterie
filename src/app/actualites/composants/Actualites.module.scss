@@ -1,0 +1,40 @@
+.actualitesSection {
+  padding: 20px;
+
+  
+  .title {
+    color:#f6c72ef6;
+    font-size: 3.5rem; 
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 12rem;
+    
+  }
+}
+
+.actualitesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 5rem;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.loader {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #902326;
+}
