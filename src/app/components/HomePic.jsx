@@ -12,18 +12,21 @@ const HomePic = ({titre, sousTitre, test}) => {
 
 <div className={styles.group}>
         <div className={styles.wrapper}>
+          <i className="fa-solid fa-location-dot"></i>
           <h3 className={styles.thirdTitle}>Alpes Batteries Annemasse</h3>
           <p className={styles.agencyText}>17 Rue de Montréal <br />74100 Ville-la-Grand</p>
           <a href="/agences/annemasse"><button className={styles.button}>Voir l'agence</button></a>
         </div>
 
          <div className={styles.wrapper}>
+          <i className="fa-solid fa-location-dot"></i>
           <h3 className={styles.thirdTitle}>Alpes Batteries Thonon</h3>
           <p className={styles.agencyText}>73 Rte du Crêt Gojon <br />74200 Margencel</p>
           <a href="/agences/thonon"><button className={styles.button}>Voir l'agence</button></a>   
         </div>
 
         <div className={styles.wrapper}>
+          <i className="fa-solid fa-location-dot"></i>
           <h3 className={styles.thirdTitle}>Alpes Batteries Sallanches</h3>
           <p className={styles.agencyText}>1918 Av André Lasquin <br />74700 Sallanches </p>
           <a href="/agences/sallanches"><button className={styles.button}>Voir l'agence</button></a>

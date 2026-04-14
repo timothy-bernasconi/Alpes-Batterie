@@ -3,7 +3,8 @@ import Partenaires from './components/Partenaires';
 import Video from './components/Video';
 import styles from './page.module.scss';
 import HomePic from './components/HomePic';
-import Services from './components/Services';
+import ServicesTest from './components/ServicesTest';
+import SectionTest from './components/SectionTest';
 
 
 
@@ -15,9 +16,11 @@ const page = () => {
       sousTitre="La référence en terme de batteries en Haute-Savoie"
       />
 
-     
+        <ServicesTest />
+       
         <Partenaires />
-        <Services />
+ <SectionTest />
+   
 
 
      

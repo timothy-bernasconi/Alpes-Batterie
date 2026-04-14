@@ -7,17 +7,17 @@ const footerData = [
     items: ["Présentation", "Nos Agences", "Actualités", "Catalogue", "Nos compétences", "Professionnels", "Contact"],
   },
   {
-    title: "Agence Annemasse",
+    title: "A.B Annemasse",
     isLink: false,
     items: ["17 Rue de Montréal,", "74100 Ville-la-Grand", "04 50 37 62 85", "SARL Creveaux Chiris", "Capital : 352 313 €", "Siret : 795 047 828 000 12", "TVA : FR20 795 047 828"],
   },
   {
-    title: "Agence Thonon-les-Bains",
+    title: "A.B Thonon",
     isLink: false,
     items: ["73 Route du Crêt Gojon,", "74200 Margencel", "04 50 16 28 53", "SARL Loel Chiris", "Capital : 3 000 €", "Siret : 832 706 279 000 11", "TVA : FR55 832 706 279"],
   },
   {
-    title: "Agence Sallanches",
+    title: "A.B Sallanches",
     isLink: false,
     items: ["1918 Avenue André Lasquin,", "74700 Sallanches", "04 50 90 97 16", "SARL Creveaux Chiris", "Capital : 3 000 €", "Siret : 795 047 828 000 12", "TVA : FR20 795 047 828"],
   },

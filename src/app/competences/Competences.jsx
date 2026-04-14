@@ -53,17 +53,6 @@ const Competences = () => {
 
       </div>
 
-      <div className={styles.deliverySection}>
-        <h3>Votre magasin ALPES BATTERIES SALLANCHES vous livre toutes les semaines sur les communes suivantes:</h3>
-
-        <p>SALLANCHES ; PASSY ; SAINT GERVAIS ; COMBLOUX ; CORDON ; MEGEVE ; PRAZ SUR ARLY ; LES HOUCHES ; CHAMONIX ; ARGENTIERES ; VALLORCINE ; MAGLAND ;  LES CARROZ ;  FLAINE ; CLUSES</p>
-
-        <p>* Nous contacter pour connaître les jours de la livraison chez vous.</p>
-
-    
-
-      </div>
-
           <div className={styles.button}>
             <a href="/catalogue"><button>Voir notre catalogue</button></a>
            <a href="https://www.bannerbatterien.com/fr/Affectations-batteries/VL-VUL"><button>Rechercher une batterie</button></a>
