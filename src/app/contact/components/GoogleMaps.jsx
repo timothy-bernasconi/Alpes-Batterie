@@ -15,7 +15,7 @@ function GoogleMap({ lat, lng, title }) {
 
     const renderMap = async () => {
       try {
-        // importLibrary est la méthode moderne de Google pour charger les composants
+      
         const { Map } = await window.google.maps.importLibrary("maps");
         const { AdvancedMarkerElement } = await window.google.maps.importLibrary("marker");
 

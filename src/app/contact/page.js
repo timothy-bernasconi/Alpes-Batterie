@@ -44,17 +44,21 @@ const page = () => {
           <div className={styles.wrapper}>
   
   <div className={styles.group}>
-
+   
+    <h3>Test</h3>
     <GoogleMaps lat={46.2043} lng={6.2793} title="Alpes Batteries - Annemasse" />
+    
   </div>
 
   <div className={styles.group}>
    
+    <h3>Test</h3>
     <GoogleMaps lat={46.3575} lng={6.4552} title="Alpes Batteries - Thonon" />
   </div>
 
   <div className={styles.group}>
    
+   <h3>Test</h3>
     <GoogleMaps lat={45.9443} lng={6.6341} title="Alpes Batteries - Sallanches" />
   </div>
 

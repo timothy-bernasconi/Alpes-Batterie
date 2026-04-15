@@ -7,7 +7,7 @@
         text-align: center;
         font-size: 2rem; 
         color: #f6c72e;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.362);
         text-transform: uppercase;
         margin-top: -1rem;
         margin-bottom: 3rem;
@@ -63,28 +63,21 @@
 }
 
 
-@media (max-width: 1024px) {
-    .container {
-        .wrapper {
-            justify-content: center;
-            .group {
-                max-width: 45%;
-            }
-        }
-    }
-}
-
 @media (max-width: 768px) {
     .container {
         padding: 40px 15px;
         
         .wrapper {
             flex-direction: column;
-            align-items: center;
+            align-items: center; 
+            width: 100%;
 
             .group {
-                max-width: 100%; 
+                
+                flex: none; 
                 width: 100%;
+                max-width: 400px; 
+                margin: 0 auto;   
             }
         }
     }

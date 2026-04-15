@@ -6,8 +6,8 @@ max-width: 350px;
   border: 1px solid rgba(255, 255, 255, 0.4); 
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); 
   font-family: 'Segoe UI', Roboto, sans-serif;
-  margin: 10rem 70px 0rem auto;
-  background: rgba(0, 0, 0, 0.027); 
+  margin: 15rem 70px 0rem auto;
+  background: rgba(0, 0, 0, 0.216); 
   backdrop-filter: blur(25px); 
   -webkit-backdrop-filter: blur(25px); 
   color: #ffffff;
@@ -22,6 +22,7 @@ max-width: 350px;
   h2 {
     text-align: center;
     color: white;
+    font-size: 1.8rem;
   }
   
 }
@@ -46,6 +47,7 @@ max-width: 350px;
   padding: 10px 0;
   border-bottom: 1px solid #f1f2f6;
   
+  
 }
 
 .group:last-child {
@@ -56,7 +58,7 @@ max-width: 350px;
 .day {
   font-weight: 700;
   color: #ffffff; 
-  width: 100px;
+  font-size: 1.5rem;
 }
 
 .hours {
@@ -65,19 +67,33 @@ max-width: 350px;
 
 .hours p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #ffffff;
   line-height: 1.4;
 }
 
 
-@media (max-width: 400px) {
-  .group {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 767px) {
+  .wrapper {
+ 
+    margin: 28rem auto; 
+    width: 90%; 
+    max-width: 320px; 
+    
+
+    padding: 1rem;
+
+    h2 {
+      font-size: 1.5rem; 
+    }
+
+    .day, .hours p {
+      font-size: 1.1rem; 
+    }
   }
-  .hours {
-    text-align: left;
-    margin-top: 5px;
+
+  .group {
+   
+    gap: 10px;
   }
 }

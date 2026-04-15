@@ -40,6 +40,8 @@
     .number {
       font-size: 2.5rem;
       font-weight: 800;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.362);
+      text-align: center;
       color: #ffffff;
       margin-bottom: 5px;
       font-family: 'Arial Black', sans-serif;
@@ -58,10 +60,16 @@
 @media (max-width: 768px) {
   .statsContainer {
     padding: 50px 10px;
+
     .wrapper {
       gap: 30px;
+     
+      justify-content: center; 
+
       .statCard {
-        flex: 1 1 40%; 
+       
+        flex: 0 1 100%; 
+        max-width: 250px; 
       }
     }
   }

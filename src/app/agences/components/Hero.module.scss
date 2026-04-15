@@ -43,11 +43,6 @@
   gap: 20px;
 }
 
-
-.mainTitle {
-  top: 35%; 
-}
-
   .btn {
          background: #902326;
     color: #f8f9fa;
@@ -69,6 +64,48 @@
   }
   }
 }
+
+
+
+  @media (max-width: 767px) {
+  .container {
+    .mainTitle {
+
+      left: 50%;
+      transform: translateX(-50%); 
+      width: 90%;          
+      max-width: 100%;     
+      text-align: center;  
+      font-size: 2.2rem;  
+      top: 18%;     
+    }
+ .phonesPosition {
+
+      left: 50%;
+      transform: translateX(-50%);
+      top: 35%; 
+      display: flex;
+      flex-direction: column; 
+      align-items: center;   
+      
+
+      width: 100%;
+      gap: 15px; 
+    }
+
+    .btn {
+  
+      width: 85%;     
+      max-width: 300px; 
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+  }
+}
+
+
+
 
 
 
