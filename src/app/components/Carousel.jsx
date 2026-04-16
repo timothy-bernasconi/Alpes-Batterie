@@ -5,9 +5,10 @@ import Image from 'next/image';
 import styles from './Carousel.module.scss';
 
 const slides = [
-  { id: 1, title: "Annemasse", desc: "17 Rue de Montréal, 74100 Ville-la-Grand", img: "/assets/alpes_annemasse.jpg" },
-  { id: 2, title: "Thonon", desc: "73 Rte du Crêt Gojon, 74200 Margencel", img: "/assets/alpes_thonon.jpg" },
-  { id: 3, title: "Sallanches", desc: "1918 Avenue André Lasquin, 74700", img: "/assets/alpes_sallanches.jpg" }
+  { id: 1, title: "Team 1", img: "/assets/background.png" },
+  { id: 2, title: "Team 2", img: "/assets/carouselTeam.jpg" },
+  { id: 3, title: "Team 3",  img: "/assets/carouselTeam2.jpg" },
+  {id : 4, title : "Team 4", img : "/assets/carouselTeam3.jpg"}
 ];
 
 export default function Carousel() {
@@ -34,13 +35,7 @@ export default function Carousel() {
               className={styles.image}
             />
       
-      <div className={styles.wrapper}>
-            <div className={styles.caption}>
-              <h3>{slide.title}</h3>
-              <p>{slide.desc}</p>
-              <button className={styles.cta}>Visiter l'agence</button>
-            </div>
-            </div>
+    
           </div>
         ))}
       </div>

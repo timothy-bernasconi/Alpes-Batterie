@@ -12,24 +12,24 @@ const avisThonon = [
 
 
 const actusThonon = {
-  titre: "L'actu fraîche de votre agence de Sallanches",
+   titre: "L'actu fraîche de votre agence d'Annemasse",
   main: {
-    image: "../assets/633521613_1501050662030339_6143588415833239173_n.jpg",
+    image: "../assets/bento.jpg",
     alt: "Action solidaire",
     titre: "Une action solidaire",
     description: "967 € réunis pour les maladies auto-immunes."
   },
   kpi: {
     chiffre: "+15",
-    texte: "nouveaux clients cette semaine à Sallanches.",
+    texte: "nouveaux clients cette semaine à Annemasse.",
     merci: "Merci !"
   },
   event: {
-    image: "../assets/650967906_1440159881231098_8297387572951408308_n.jpg",
+    image: "../assets/promotion.webp",
     alt: "Car Alpes",
-    badge: "Évènement",
-    titre: "Car Alpes 2026",
-    description: "10ème édition du Tour des Légendes"
+    badge: "Promotion",
+    titre: "Produit du mois",
+    description: "Pour le mois de mai, le produit du mois est la batterie Banner AGM 530 30"
   }
 };
 

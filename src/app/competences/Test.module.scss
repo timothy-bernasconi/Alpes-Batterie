@@ -1,0 +1,130 @@
+.wrapper {
+  min-height: 100vh;
+  margin-top: 80px;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
+              url('/assets/batterie.jpg') center/cover no-repeat fixed; // Image fixe au scroll
+  display: flex;
+  align-items: center;
+  padding: 6rem 2rem;
+  color: white;
+
+  .mainContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    .badge {
+      background: #902326;
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 900;
+      margin: 1.5rem 0;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .expertGrid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .expertCard {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px); // Effet verre dépoli
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem 2rem;
+    width: 280px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    .iconWrapper {
+      font-size: 2.5rem;
+      color: #902326;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .revealText {
+      max-height: 0;
+      opacity: 0;
+      transition: all 0.4s ease;
+      p { font-size: 0.9rem; color: rgba(255,255,255,0.6); }
+    }
+
+    &:hover {
+      background: rgba(144, 35, 38, 0.2);
+      border-color: #902326;
+      transform: translateY(-10px);
+
+      .iconWrapper { transform: scale(1.2) translateY(-5px); color: #fff; }
+      .revealText { max-height: 100px; opacity: 1; margin-top: 1rem; }
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+
+    a {
+      text-decoration: none;
+      padding: 1.2rem 2.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      border-radius: 4px;
+    }
+
+    .primary {
+      background: #902326;
+      color: white;
+      box-shadow: 0 10px 20px rgba(144, 35, 38, 0.3);
+      &:hover { transform: scale(1.05); background: #b02b2e; }
+    }
+
+    .secondary {
+      border: 2px solid white;
+      color: white;
+      &:hover { background: white; color: black; }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper .header h1 { font-size: 2.5rem; }
+  .expertCard { width: 100%; }
+}

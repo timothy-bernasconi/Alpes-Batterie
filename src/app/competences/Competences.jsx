@@ -39,12 +39,12 @@ const Competences = () => {
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Batterie de démarrage (Camion)</h3>
+          <h3>Batterie démarrage (Camion)</h3>
           <p>Nous offrons des batteries de démarrage solides, conçues pour délivrer une puissance optimale et garantir une longévité accrue, même dans les situations les plus exigeantes.</p>
         </div>
 
         <div className={styles.serviceCard}>
-          <h3>Camping-Car : </h3>
+          <h3>Batterie Camping-Car : </h3>
           <p>Un camping-car est une maison sur roues, nécessitant une alimentation constante pour tout, de l’éclairage aux appareils électroménagers. Nos batteries pour camping-cars sont conçues pour fournir une puissance stable et fiable</p>
         </div>
 

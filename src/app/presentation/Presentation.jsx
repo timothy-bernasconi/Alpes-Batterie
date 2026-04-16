@@ -3,11 +3,12 @@ import styles from "./Presentation.module.scss";
 
 const Presentation = () => {
   return (
+    
     <section className={styles.wrapper}>
 
-      <div className={styles.picture}>
+      {/* <div className={styles.picture}>
 
-      </div>
+      </div> */}
     
 
 

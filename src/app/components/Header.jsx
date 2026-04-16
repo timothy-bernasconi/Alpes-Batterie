@@ -2,10 +2,14 @@
 import { useState, useEffect } from 'react';
 import styles from './Header.module.scss';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  const pathname = usePathname();
+  const isRedPage = pathname === '/presentation' || pathname === '/competences'
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -16,7 +20,14 @@ const Header = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className={`${styles.header} ${scrolled ? styles.scrolled : ''} ${isOpen ? styles.menuOpen : ''}`}>
+   <nav 
+      className={`
+        ${styles.header} 
+        ${scrolled ? styles.scrolled : ''} 
+        ${isOpen ? styles.menuOpen : ''} 
+        ${isRedPage ? styles.isRed : ''}
+      `}
+    >
       <div className={styles.logo}>
         <img src="/assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png" alt="Logo" />
       </div>

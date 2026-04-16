@@ -11,7 +11,7 @@ const page = () => {
       <div className={styles.wrapper}> 
        
         <h1 className={styles.title}>Nous contacter</h1>
-        <p className={styles.paragraph}>Une question technique ou besoin d'un conseil expert pour votre batterie ? Nos équipes vous accueillent dans nos trois points de vente en Haute-Savoie. Remplissez le formulaire ci-dessous ou rendez-nous visite directement à Annemasse, Thonon ou Sallanches pour bénéficier d'un diagnostic et de solutions adaptées à vos besoins.</p>  
+        <p className={styles.paragraph}>Une question technique ou besoin d'un conseil expert pour votre batterie ? Nos équipes vous accueillent dans nos trois points de vente en Haute-Savoie. Remplissez le formulaire ci-dessous ou rendez-nous visite directement pour bénéficier d'un diagnostic et de solutions adaptées à vos besoins.</p>  
 
           <div className={styles.buttons}>
         
@@ -45,21 +45,21 @@ const page = () => {
   
   <div className={styles.group}>
    
-    <h3>Test</h3>
-    <GoogleMaps lat={46.2043} lng={6.2793} title="Alpes Batteries - Annemasse" />
+
+    <GoogleMaps lat={46.2043} lng={6.2793} title="Alpes Batteries - Annemasse" /> <br/>
     
   </div>
 
   <div className={styles.group}>
    
-    <h3>Test</h3>
-    <GoogleMaps lat={46.3575} lng={6.4552} title="Alpes Batteries - Thonon" />
+  
+    <GoogleMaps lat={46.3575} lng={6.4552} title="Alpes Batteries - Thonon" /> <br/>
   </div>
 
   <div className={styles.group}>
    
-   <h3>Test</h3>
-    <GoogleMaps lat={45.9443} lng={6.6341} title="Alpes Batteries - Sallanches" />
+
+    <GoogleMaps lat={45.9443} lng={6.6341} title="Alpes Batteries - Sallanches" /> <br/>
   </div>
 
 </div>

@@ -6,8 +6,8 @@
   aspect-ratio: 16 / 9;
   z-index: 1;
   margin: 0;
-  border-top: 15px solid white;
-  border-bottom: 15px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
    
   @media (max-width: 768px) {
     aspect-ratio: 4 / 3;
@@ -27,7 +27,7 @@
 
     .image {
       object-fit: cover; 
-      object-position: top;
+      object-position: center;
     }
   }
 
@@ -38,31 +38,6 @@
     height: 500px;
   }
 
-  .caption {
-        text-align: center;
-    z-index: 10;
-    max-width: 400px;
-    background: rgba(255, 255, 255, 0.195);
-    backdrop-filter: blur(5px);
-    padding: 1.5rem;
-    border-radius: 10px;
-    color: white;
-
-    h3 { font-size: 1.8rem; margin: 0; }
-    p { margin: 0.5rem 0 1.2rem; opacity: 0.9; }
-
-    .cta {
-      background: #b82f29;;
-      color: white;
-      border: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: background 0.2s;
-      &:hover { background: #ff00006c; border: 1px solid rgba(255, 255, 255, 0.463);}
-    }
-  }
 
   .navButton {
     position: absolute;

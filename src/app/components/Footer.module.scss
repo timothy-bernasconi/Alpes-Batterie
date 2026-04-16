@@ -15,7 +15,7 @@
     text-align: left;
 
     h2 {
-      font-size: 1.2rem; // Légèrement réduit pour l'élégance
+      font-size: 1.2rem;
       margin-bottom: 1.5rem;
       border-bottom: 2px solid #333;
       padding-bottom: 0.5rem;
@@ -43,18 +43,17 @@
     }
   }
 
-  // --- GESTION DU LOGO ---
   .divLogo {
     display: flex;
-    justify-content: flex-end; // Aligne à gauche par défaut
-    height: 0; // Évite que le logo ne pousse le contenu vers le bas
-    padding-right: 12%;
+    justify-content: flex-end; 
+    height: 0; 
+    padding-right: 14%;
   }
 
   .logo img {
     height: 140px;
     width: auto;
-    transform: translateY(-8rem); 
+    transform: translateY(-6.5rem); 
  
     
   }
@@ -63,15 +62,22 @@
 
   .bottomBar {
     margin-top: 3rem;
+    margin-bottom: -3rem;
     padding-top: 1.5rem;
     border-top: 1px solid #333;
     text-align: center;
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
 
     .socials {
       display: flex;
       justify-content: center;
       gap: 15px;
       font-size: 2rem;
+    
 
       i:hover {
         color: #b82f29;
@@ -79,6 +85,7 @@
         transition: 0.5s ease;
       }
     }
+
   }
 
 

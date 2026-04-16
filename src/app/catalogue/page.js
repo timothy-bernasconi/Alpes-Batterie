@@ -1,9 +1,9 @@
-"use client"// Dans src/app/catalogue/page.js
+"use client"
 import dynamic from 'next/dynamic';
 
 const CatalogueSansSSR = dynamic(
   () => import('./composants/Catalogue'),
-  { ssr: false } // <--- C'est ça qui empêche le bug DOMMatrix
+  { ssr: false } 
 );
 
 export default function Page() {

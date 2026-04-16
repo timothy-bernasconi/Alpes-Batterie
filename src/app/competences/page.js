@@ -1,13 +1,14 @@
 import React from 'react'
 import Competences from './Competences'
 import styles from './page.module.scss'
+import Test from './Test'
 
 const page = () => {
   return (
     <div>
-        <Competences />
+        <Test />
     </div>
   )
 }
 
-export default page
+export default page;

@@ -6,19 +6,11 @@ const NewCard = ({ data }) => {
   if (!data) return null;
 
   const getImageUrl = (url) => {
-    if (!url) return "https://via.placeholder.com/400x250?text=Pas+d'image";
+  if (!url) return "https://via.placeholder.com/400x250?text=Pas+d'image";
+  
 
-    if (url.includes("drive.google.com")) {
-
-      const fileId = url.split('/d/')[1]?.split('/')[0] || url.split('id=')[1]?.split('&')[0];
-      
-      if (fileId) {
-        
-        return `https://lh3.googleusercontent.com/u/0/d/${fileId}`;
-      }
-    }
-    return url;
-  };
+  return url;
+};
 
   return (
     <div className="news-card" style={{

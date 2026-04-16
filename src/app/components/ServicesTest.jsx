@@ -40,12 +40,12 @@ const ServicesTest = () => {
 
         <div className={styles.group}>      
           <h3><i className="fa-solid fa-people-group"></i> Accompagnement technique et complet</h3>
-          <p>Votre offre se distingue par un assortiment vaste, couvrant l’intégralité des besoins en énergie, du démarrage de véhicule aux solutions industrielles et à l’éclairage de haute performance.</p>
+          <p>Acteur de référence sur le marché de l'énergie, notre structure déploie une gamme complète allant du démarrage moteur aux systèmes industriels et éclairages techniques. Avec un stock permanent et une logistique réactive, nous assurons à nos clients une disponibilité immédiate et une performance durable.</p>
         </div>     
 
         <div className={styles.group}>
           <h3><i className="fa-solid fa-thumbs-up"></i> Proximité et logistique de performance</h3>
-          <p>Acteur stratégique dans la Haute-Savoie, vous placez l'expérience client au cœur de votre activité grâce à une logistique de proximité optimisée sur l'ensemble du Grand Genève.</p>
+          <p>Partenaire de confiance implanté en Haute-Savoie, nous érigeons l'accompagnement personnalisé à travers une gestion logistique de pointe sur le Grand Genève. En misant sur un ancrage territorial fort et des processus de distribution agiles, nous garantissons à votre entreprise fluidité et réactivité.</p>
         </div>
       </div>
     </motion.div>

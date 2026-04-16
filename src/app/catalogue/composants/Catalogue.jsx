@@ -9,17 +9,16 @@ pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.vers
 
 const PageElement = forwardRef((props, ref) => {
   return (
-    <div className={styles.pageWrapper} ref={ref} data-density="soft">
-      <div> 
-        <Page 
-          pageNumber={props.number} 
-          width={550}
-          renderAnnotationLayer={false} 
-          renderTextLayer={false}
-          devicePixelRatio={1.2}
-          loading="" 
-        />
-      </div>
+  
+    <div className={styles.pageWrapper} ref={ref} {...props}>
+      <Page 
+        pageNumber={props.number} 
+        width={550}
+        renderAnnotationLayer={false} 
+        renderTextLayer={false}
+        devicePixelRatio={1.5} 
+        loading="" 
+      />
     </div>
   );
 });

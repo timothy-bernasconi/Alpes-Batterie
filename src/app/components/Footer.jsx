@@ -4,8 +4,16 @@ const footerData = [
   {
     title: "Navigation",
     isLink: true,
-    items: ["Présentation", "Nos Agences", "Actualités", "Catalogue", "Nos compétences", "Professionnels", "Contact"],
+    items: [
+      { label: "Présentation", path: "/presentation" },
+      { label: "Nos Agences", path: "/agences" },
+      { label: "Actualités", path: "/actualites" },
+      { label: "Catalogue", path: "/catalogue" },
+      { label: "Nos compétences", path: "/competences" },
+      { label: "Contact", path: "/contact" },
+    ],
   },
+
   {
     title: "A.B Annemasse",
     isLink: false,
@@ -34,24 +42,30 @@ export default function Footer() {
               {section.items.map((item, index) => (
                 <li key={index}>
                   {section.isLink ? (
-                    <a href="#">{item}</a>
+          
+                    <a href={item.path}>{item.label}</a>
                   ) : (
+                   
                     <span className={styles.infoText}>{item}</span>
                   )}
                 </li>
               ))}
             </ul>
           </div>
-
         ))}
       </div>
-      <div className={styles.divLogo}>     
-      <div className={styles.logo}>
-        <img src="./assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png" alt="" />
-      </div></div>
+
+      <div className={styles.divLogo}>
+        <div className={styles.logo}>
+          <img 
+            src="./assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png" 
+            alt="Logo Alpes Batteries" 
+          />
+        </div>
+      </div>
 
       <div className={styles.bottomBar}>
-        <p>© {new Date().getFullYear()} Site réalisé par AgirEnCom — Tous droits réservés.</p>
+        <p>© {new Date().getFullYear()} — Site réalisé par <a href="https://www.agirencom.com/">AgirEnCom</a> — Tous droits réservés.</p>
         <div className={styles.socials}>
           <p><i className="fa-brands fa-facebook"></i></p>
           <p><i className="fa-brands fa-instagram"></i></p>

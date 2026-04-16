@@ -35,7 +35,7 @@ function MyForm() {
         />
       </label>
  
-       <label className={styles.input}>Société *
+       <label className={styles.input}>Société 
         <input
           type="text" 
           value={company}
@@ -52,33 +52,40 @@ function MyForm() {
       </label>
 
         
-        <label className={styles.radioLabel}> Objet :
-            <div></div>
-          <input
-            type="radio"
-            value="technical"
-            checked={type === "technical"}
-            onChange={(e) => setType(e.target.value)}
-          />
-           Renseignements techniques
+        <div className={styles.radioGroup}>
+  <span className={styles.radioTitle}>Objet du message</span>
+  <div className={styles.radioOptions}>
+    <label className={styles.radioItem}>
+      <input
+        type="radio"
+        value="technical"
+        checked={type === "technical"}
+        onChange={(e) => setType(e.target.value)}
+      />
+      <span>Renseignements techniques</span>
+    </label>
 
+    <label className={styles.radioItem}>
+      <input
+        type="radio"
+        value="commands"
+        checked={type === "commands"}
+        onChange={(e) => setType(e.target.value)}
+      />
+      <span>Suivi commande</span>
+    </label>
 
-          <input
-            type="radio"
-            value="commands"
-            checked={type === "commands"}
-            onChange={(e) => setType(e.target.value)}
-          />
-           Suivi commande
-
-          <input
-            type="radio"
-            value="sav"
-            checked={type === "sav"}
-            onChange={(e) => setType(e.target.value)}
-          />
-           Suivi SAV
-        </label>
+    <label className={styles.radioItem}>
+      <input
+        type="radio"
+        value="sav"
+        checked={type === "sav"}
+        onChange={(e) => setType(e.target.value)}
+      />
+      <span>Suivi SAV</span>
+    </label>
+  </div>
+</div>
 
         <label className={styles.label}>
        Magasins

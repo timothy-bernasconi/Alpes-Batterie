@@ -4,6 +4,7 @@ import styles from './page.module.scss';
 import HomePic from './components/HomePic';
 import ServicesTest from './components/ServicesTest';
 import SectionTest from './components/SectionTest';
+import Carousel from './components/Carousel';
 
 
 
@@ -16,9 +17,10 @@ const page = () => {
       />
 
         <ServicesTest />
-       
         <Partenaires />
- <SectionTest />
+        <SectionTest />
+        <Carousel />
+        
   
    
 
