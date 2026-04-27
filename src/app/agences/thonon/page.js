@@ -3,6 +3,7 @@ import Equipe from '../components/Equipe'
 import Hero from '../components/Hero'
 import AvisAgence from '../components/AvisAgence'
 import BentoActu from '../components/BentoActu'
+import GoogleMaps from '../components/GoogleMaps'
 
 const avisThonon = [
   { id: 1, name: "Anthony", star: 5, text: "Une équipe exceptionnelle ! Je recommande vivement ce magasin et ses employés. C'est la deuxième fois que j'achète une batterie ici. En plus de l'installation, je suis revenu deux fois en raison d'un souci (lié à mon véhicule, pas à leurs batteries), et ils ont gentiment effectué tous les diagnostics, même si ce n'était pas leur responsabilité. Un grand merci à eux !" },
@@ -12,7 +13,7 @@ const avisThonon = [
 
 
 const actusThonon = {
-   titre: "L'actu fraîche de votre agence d'Annemasse",
+   titre: "L'actu fraîche de votre agence de Thonon",
   main: {
     image: "../assets/bento.jpg",
     alt: "Action solidaire",
@@ -21,7 +22,7 @@ const actusThonon = {
   },
   kpi: {
     chiffre: "+15",
-    texte: "nouveaux clients cette semaine à Annemasse.",
+    texte: "nouveaux clients cette semaine à Thonon.",
     merci: "Merci !"
   },
   event: {
@@ -47,6 +48,8 @@ const Page = () => {
       videoSrc="/assets/video/thonon.mp4" 
       fallbackImage="/assets/fallback-annemasse.jpg"
       titre = "Alpes Batterie Thonon"
+      phone = "04 50 16 28 53"
+      email = "thonon@alpesbatteries.com"
     />
 
 
@@ -55,6 +58,8 @@ const Page = () => {
        presentationEquipe = {presentationEquipe}
        equipeAnnemasse={equipeThonon}
       />
+
+      <div style={{display : "flex", justifyContent : "center", alignItems:"center", background: "#902326", paddingTop : "2rem", paddingBottom : "2rem", height : "450px"}}>  <GoogleMaps lat={46.3575} lng={6.4552} title="Alpes Batteries - Thonon" /> <br/></div>
       
    
       <AvisAgence 

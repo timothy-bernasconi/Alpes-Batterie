@@ -15,7 +15,11 @@
   margin-bottom: 4rem;
   flex-wrap: wrap;
 
-  span {
+  a{
+    text-decoration: none;
+  }
+
+   span {
     background: #f8f9fa;
     color: #902326;
     padding: 0.8rem 2rem;

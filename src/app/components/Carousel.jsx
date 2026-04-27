@@ -5,10 +5,11 @@ import Image from 'next/image';
 import styles from './Carousel.module.scss';
 
 const slides = [
-  { id: 1, title: "Team 1", img: "/assets/background.png" },
-  { id: 2, title: "Team 2", img: "/assets/carouselTeam.jpg" },
-  { id: 3, title: "Team 3",  img: "/assets/carouselTeam2.jpg" },
-  {id : 4, title : "Team 4", img : "/assets/carouselTeam3.jpg"}
+  { id: 1, title: "Team 1", img: "/assets/event/background.png" },
+  { id: 2, title: "Team 2", img: "/assets/event/carouselTeam.jpg" },
+  { id: 3, title: "Team 3", img: "/assets/event/carouselTeam1.jpg" },
+  { id: 4, title: "Team 4",  img: "/assets/event/carouselTeam2.jpg" },
+  {id : 5, title : "Team 5", img : "/assets/event/carouselTeam3.jpg"}
 ];
 
 export default function Carousel() {
@@ -19,10 +20,14 @@ export default function Carousel() {
 
   return (
     <section className={styles.carouselContainer}>
+
+       <h3>Nos Évènements</h3>
       <div 
         className={styles.track} 
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
+
+
         {slides.map((slide) => (
           <div key={slide.id} className={styles.slide}>
           

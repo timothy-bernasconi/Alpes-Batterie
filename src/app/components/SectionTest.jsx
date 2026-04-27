@@ -5,9 +5,8 @@ import { motion } from 'framer-motion';
 import styles from './SectionTest.module.scss';
 
 const stats = [
-  { id: 1, value: "+15", label: "Ans d'expertise", icon: "fa-solid fa-clock-rotate-left" },
-  { id: 2, value: "5000+", label: "Références en stock", icon: "fa-solid fa-boxes-stacked" },
-  { id: 3, value: "24/48h", label: "Délais de livraison", icon: "fa-solid fa-truck-fast" },
+  { id: 1, value: "19", label: "Ans d'expertise", icon: "fa-solid fa-clock-rotate-left" },
+  { id: 2, value: "5000+", label: "Références", icon: "fa-solid fa-boxes-stacked" },
   { id: 4, value: "100%", label: "Conseils d'experts", icon: "fa-solid fa-user-check" }
 ];
 

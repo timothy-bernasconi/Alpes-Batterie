@@ -4,7 +4,7 @@ import styles from "./Test.module.scss";
 const Test = () => {
   const services = [
     { title: "Véhicules & Utilitaires", icon: "fa-car-battery", desc: "Moto, auto, camion : stock immédiat." },
-    { title: "Horlogerie", icon: "fa-clock", desc: "Piles de haute qualité pour vos montres." },
+    { title: "Piles", icon: "fa-battery", desc: "Piles de haute qualité pour vos montres." },
     { title: "Diagnostic", icon: "fa-microchip", desc: "Tests complets circuits et batteries." },
     { title: "Sécurité", icon: "fa-bolt", desc: "Installation de coupe-circuit expert." },
     { title: "Camping-Car", icon: "fa-caravan", desc: "Énergie stable pour votre confort." }

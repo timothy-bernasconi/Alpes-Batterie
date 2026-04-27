@@ -21,9 +21,9 @@ const Presentation = () => {
       </div>
 
       <div className={styles.locations}>
-  <span>Annemasse</span>
-  <span>Thonon-les-Bains</span>
-  <span>Sallanches</span>
+  <a href="/agences/annemasse"><span>Annemasse</span></a>
+  <a href="/agences/thonon"><span>Thonon-les-Bains</span></a>
+  <a href="/agences/sallanches"><span>Sallanches</span></a>
 </div>
 
      

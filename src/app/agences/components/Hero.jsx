@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './Hero.module.scss';
 import Horaires from '../../components/Horaires';
 
-const Hero = ({ titre, videoSrc, fallbackImage }) => {
+const Hero = ({ titre, videoSrc, fallbackImage, phone, email }) => {
   return (
     <div className={styles.container}>
 
@@ -27,8 +27,8 @@ const Hero = ({ titre, videoSrc, fallbackImage }) => {
       </div>
 
       <div className={styles.phonesPosition}>
-        <button className={styles.btn}>Nous Appeler</button>
-        <button className={styles.btn}>Itinéraire</button>
+        <button className={styles.btn}>{phone}</button>
+        <button className={styles.btn}>{email}</button>
       </div>
     </div>
   );

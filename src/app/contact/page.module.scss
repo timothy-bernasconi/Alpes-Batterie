@@ -85,6 +85,21 @@ body {
     gap: 250px; 
     margin-top: 2rem;
 
+    div {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            color: white;
+            margin-top: 2rem;
+        }
+
+        span:hover {
+            color: #f6c72e;
+            cursor: pointer;
+        }
+    }
+
     button {
         background: #902326;
         color: #f8f9fa;

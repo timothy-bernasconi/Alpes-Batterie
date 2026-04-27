@@ -17,7 +17,7 @@ const Services = () => {
         <div className={styles.group}>
       
             <h3><i className="fa-solid fa-star"> </i>  L'expertise au service de l'énergie</h3>
-            <p>Spécialiste reconnu dans le stockage et la conversion d’énergie, votre enseigne propose une expertise pointue en batteries, piles et solutions solaires. En collaborant avec des partenaires de prestige tels que Banner, Fulmen ou Varta, vous garantissez des produits d’une fiabilité exceptionnelle.</p>
+            <p>Spécialiste reconnu dans le stockage et la conversion d’énergie, votre enseigne propose une expertise pointue en batteries, piles et solutions solaires. En collaborant avec des partenaires de prestige tels que Banner, Optima ou Yuasa, vous garantissez des produits d’une fiabilité exceptionnelle.</p>
         </div>
        
             

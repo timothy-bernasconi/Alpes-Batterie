@@ -7,27 +7,28 @@ const footerData = [
     items: [
       { label: "Présentation", path: "/presentation" },
       { label: "Nos Agences", path: "/agences" },
+      {label : "Nos Fournisseurs", path : "/fournisseurs"},
       { label: "Actualités", path: "/actualites" },
-      { label: "Catalogue", path: "/catalogue" },
+      { label: "Produits", path: "/produits" },
       { label: "Nos compétences", path: "/competences" },
       { label: "Contact", path: "/contact" },
     ],
   },
 
   {
-    title: "A.B Annemasse",
+    title: "Alpes Batterie Annemasse",
     isLink: false,
-    items: ["17 Rue de Montréal,", "74100 Ville-la-Grand", "04 50 37 62 85"],
+    items: ["17 Rue de Montréal,", "74100 Ville-la-Grand", "04 50 37 62 85", "annemasse@alpesbatteries.com"],
   },
   {
-    title: "A.B Thonon",
+    title: "Alpes Batteries Thonon",
     isLink: false,
-    items: ["73 Route du Crêt Gojon,", "74200 Margencel", "04 50 16 28 53"],
+    items: ["73 Route du Crêt Gojon,", "74200 Margencel", "04 50 16 28 53", "thonon@alpesbatteries.com"],
   },
   {
-    title: "A.B Sallanches",
+    title: "Alpes Batteries Sallanches",
     isLink: false,
-    items: ["1918 Avenue André Lasquin,", "74700 Sallanches", "04 50 90 97 16"],
+    items: ["1918 Avenue André Lasquin,", "74700 Sallanches", "04 50 90 97 16", "sallanches@alpesbatteries.com"],
   },
 ];
 
@@ -67,10 +68,10 @@ export default function Footer() {
       <div className={styles.bottomBar}>
         <p>© {new Date().getFullYear()} — Site réalisé par <a href="https://www.agirencom.com/">AgirEnCom</a> — Tous droits réservés.</p>
         <div className={styles.socials}>
-          <p><i className="fa-brands fa-facebook"></i></p>
-          <p><i className="fa-brands fa-instagram"></i></p>
-          <p><i className="fa-brands fa-linkedin-in"></i></p>
-          <p><i className="fa-brands fa-youtube"></i></p>
+          <a href="https://www.facebook.com/alpesbatteries"><p><i className="fa-brands fa-facebook"></i></p></a>
+          <a href="https://www.instagram.com/alpesbatteries/"><p><i className="fa-brands fa-instagram"></i></p></a>
+          <a href="https://www.linkedin.com/company/alpes-batteries/"><p><i className="fa-brands fa-linkedin-in"></i></p></a>
+          <a href="https://www.youtube.com/@AlpesBatteries"><p><i className="fa-brands fa-youtube"></i></p></a>
         </div>
       </div>
     </footer>

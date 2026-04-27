@@ -17,7 +17,6 @@ const page = () => {
       />
 
         <ServicesTest />
-        <Partenaires />
         <SectionTest />
         <Carousel />
         

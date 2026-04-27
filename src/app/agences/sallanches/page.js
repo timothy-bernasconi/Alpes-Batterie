@@ -3,6 +3,7 @@ import Equipe from '../components/Equipe'
 import Hero from '../components/Hero'
 import AvisAgence from '../components/AvisAgence'
 import BentoActu from '../components/BentoActu'
+import GoogleMaps from '../components/GoogleMaps'
 
 const avisSallanches = [
   { id: 1, name: "Sylvain B.", star: 5, text: "Accueil avec le sourire, à l’écoute, de vrais conseils, un suivi bref tout ce qu’on attend d’un professionnel mais qui se perd aujourd’hui alors on le souligne quand c’est top. Merci les gars la motoneige est fin prète pour la saison" },
@@ -12,7 +13,7 @@ const avisSallanches = [
 
 
 const actuSallanches = {
-   titre: "L'actu fraîche de votre agence d'Annemasse",
+   titre: "L'actu fraîche de votre agence de Sallanches",
   main: {
     image: "../assets/bento.jpg",
     alt: "Action solidaire",
@@ -21,7 +22,7 @@ const actuSallanches = {
   },
   kpi: {
     chiffre: "+15",
-    texte: "nouveaux clients cette semaine à Annemasse.",
+    texte: "nouveaux clients cette semaine à Sallanches.",
     merci: "Merci !"
   },
   event: {
@@ -47,6 +48,8 @@ const Page = () => {
       videoSrc="/assets/video/sallanches.mp4" 
       fallbackImage="/assets/fallback-annemasse.jpg"
       titre = "Alpes Batterie Sallanches"
+      phone = "04 50 90 97 16"
+      email = "sallanches@alpesbatteries.com"
       
     />
 
@@ -56,6 +59,8 @@ const Page = () => {
        equipeAnnemasse={equipeSallanches}
        
       />
+      
+         <div style={{display : "flex", justifyContent : "center", alignItems:"center", background: "#902326", paddingTop : "2rem", paddingBottom : "2rem", height : "450px"}}>  <GoogleMaps lat={45.9443} lng={6.6341} title="Alpes Batteries - Sallanches" /> <br/></div>
       
    
       <AvisAgence 

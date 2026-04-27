@@ -3,6 +3,7 @@ import Equipe from '../components/Equipe'
 import Hero from '../components/Hero'
 import AvisAgence from '../components/AvisAgence'
 import BentoActu from '../components/BentoActu'
+import GoogleMaps from '../components/GoogleMaps'
 
 
 
@@ -56,6 +57,8 @@ const Page = () => {
       videoSrc="/assets/video/annemasse.mp4" 
       fallbackImage="/assets/fallback-annemasse.jpg"
       titre = "Alpes Batteries Annemasse"
+      phone = "04 50 37 62 85"
+      email = "annemasse@alpesbatteries.com"
     />
 
       <Equipe 
@@ -63,6 +66,15 @@ const Page = () => {
        presentationEquipe = {presentationEquipe}
        equipeAnnemasse={equipeAnnemasse}
       />
+
+  
+         <div style={{display : "flex", justifyContent : "center", alignItems:"center", background: "#902326", paddingTop : "2rem", paddingBottom : "2rem", height : "450px"}}>
+          <GoogleMaps lat={46.2043} lng={6.2793} title="Alpes Batteries - Annemasse" /> <br/>
+          </div>
+
+  
+
+      
       
    
       <AvisAgence 
