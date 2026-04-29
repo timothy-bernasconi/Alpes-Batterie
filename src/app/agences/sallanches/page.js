@@ -35,8 +35,8 @@ const actuSallanches = {
 };
 
 const equipeSallanches = [
-        { id: 1, nom: "John", image: '/assets/equipe/john.png' },
-        { id: 2, nom: "Jeremy", image: '/assets/equipe/jeremy.png' }, 
+        { id: 1, nom: "John", image: '/assets/equipe/john.jpeg' },
+        { id: 2, nom: "Jeremy", image: '/assets/equipe/jeremy.jpeg' }, 
     ]
 
     const presentationEquipe = "Votre agence de Sallanches vous ouvre ses portes du lundi au samedi. Passez nous voir, le café est offert ! ";

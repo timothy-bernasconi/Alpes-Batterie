@@ -42,26 +42,10 @@
       }
     }
   }
-
-  .divLogo {
-    display: flex;
-    justify-content: flex-end; 
-    height: 0; 
-    padding-right: 14%;
-  }
-
-  .logo img {
-    height: 140px;
-    width: auto;
-    transform: translateY(-4.5rem); 
  
-    
-  }
-
-  
 
   .bottomBar {
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: -3rem;
     padding-top: 1.5rem;
     border-top: 1px solid #333;
@@ -89,16 +73,22 @@
   }
 
 
-  @media (max-width: 767px) {
-    padding-top: 5rem; 
-
+  @media (max-width: 1200px) {
     .grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem 1rem;
     }
 
-    .divLogo {
-      display: none;
+
+  }
+
+
+  @media (max-width: 767px) {
+    padding-top: 5rem; 
+
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem 1rem;
     }
 
     

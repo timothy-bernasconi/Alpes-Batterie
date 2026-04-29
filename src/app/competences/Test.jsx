@@ -3,10 +3,10 @@ import styles from "./Test.module.scss";
 
 const Test = () => {
   const services = [
-    { title: "Véhicules & Utilitaires", icon: "fa-car-battery", desc: "Moto, auto, camion : stock immédiat." },
-    { title: "Piles", icon: "fa-battery", desc: "Piles de haute qualité pour vos montres." },
-    { title: "Diagnostic", icon: "fa-microchip", desc: "Tests complets circuits et batteries." },
-    { title: "Sécurité", icon: "fa-bolt", desc: "Installation de coupe-circuit expert." },
+    { title: "Véhicules & Utilitaires", icon: "fa-car-battery", desc: "Des batteries adaptées à tous type de véhicule : moto, auto, camion." },
+    { title: "Piles", icon: "fa-battery", desc: "Remplacement des piles de vos montres" },
+    { title: "Produits", icon: "fa-warehouse", desc: "Plus de 5000 références de produits" },
+    { title: "Disponibilité", icon: "fa-phone", desc: "Nous sommes disponibles du lundi au samedi pour vous servir." },
     { title: "Camping-Car", icon: "fa-caravan", desc: "Énergie stable pour votre confort." }
   ];
 
@@ -14,7 +14,6 @@ const Test = () => {
     <section className={styles.wrapper}>
       <div className={styles.mainContainer}>
         <div className={styles.header}>
-          <span className={styles.badge}>Expertise locale</span>
           <h1>Nos compétences</h1>
           <p>Un accompagnement humain pour toutes vos solutions d'énergie.</p>
         </div>

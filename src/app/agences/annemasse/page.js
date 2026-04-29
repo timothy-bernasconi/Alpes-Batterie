@@ -38,12 +38,12 @@ const actuAnnemasse = {
 };
 
 const equipeAnnemasse = [
-        { id: 1, nom: "Virginie", image: '/assets/equipe/virginie.png' },
-        { id: 2, nom: "Corentin", image: '/assets/equipe/corentin.png' },
-        { id: 3, nom: "Fabien", image: '/assets/equipe/fabien.png' },
-        { id: 4, nom: "Hugo", image: '/assets/equipe/hugo.png' },
-        { id: 5, nom: "Edouard", image: '/assets/equipe/hugo.png' },
-        { id: 6, nom: "Élodie", image: '/assets/equipe/elodie.png' },    
+        { id: 1, nom: "Virginie", image: '/assets/equipe/virginie.jpeg' },
+        { id: 2, nom: "Corentin", image: '/assets/equipe/corentin.jpeg' },
+        { id: 3, nom: "Fabien", image: '/assets/equipe/fabien.jpeg' },
+        { id: 4, nom: "Hugo", image: '/assets/equipe/hugo.jpeg' },
+        { id: 5, nom: "Edouard", image: '/assets/equipe/edouard.jpeg' },
+        { id: 6, nom: "Élodie", image: '/assets/equipe/elodie.jpeg' },    
     ]
 
     const presentationEquipe = "Votre agence d'Annemasse vous ouvre ses portes du lundi au samedi. Passez nous voir, le café est offert ! ";

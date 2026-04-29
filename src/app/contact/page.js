@@ -1,8 +1,6 @@
 import React from 'react'
 import MyForm from './components/Form';
 import styles from './page.module.scss'
-import Partenaires from '../components/Partenaires';
-
 
 
 const page = () => {
@@ -17,21 +15,27 @@ const page = () => {
         
         <div> 
           <h2>Annemasse</h2>
-           <button> 04 50 37 62 85</button>
-           <span><i className="fa-solid fa-envelope"></i> annemasse@alpesbatteries.com</span>
+          <img src={"/assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png"} />
+          <span> annemasse@alpesbatteries.com</span>
+           <span>04 50 37 62 85</span>
+           
         
           </div>
 
         <div>
-             <h2>Thonon</h2>
-             <button>04 50 90 97 16</button>
-             <span><i className="fa-solid fa-envelope"></i> thonon@alpesbatteries.com</span>
+             <h2>Thonon-les-Bains</h2>
+             <img src={"/assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png"} />
+             <span> thonon@alpesbatteries.com</span>
+             <span>04 50 90 97 16</span>
+             
         </div>
 
         <div>
          <h2>Sallanches</h2>
-         <button>04 50 16 28 53</button>
-         <span><i className="fa-solid fa-envelope"></i> sallanches@alpesbatteries.com</span>
+         <img src={"/assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png"} />
+         <span>sallanches@alpesbatteries.com</span>
+         <span>04 50 16 28 53</span>
+         
         </div>
         
          </div>
@@ -46,7 +50,7 @@ const page = () => {
           </div>
         </div>
       </div>  
-      <Partenaires />
+     
     </div>
   )
 }

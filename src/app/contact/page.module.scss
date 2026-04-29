@@ -82,47 +82,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 250px; 
-    margin-top: 2rem;
+    margin-top: 3rem;
+    gap: 200px; 
+
 
     div {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        padding: 25px 25px;
+        border-radius: 15px;
+        height: 250px;
+        width: 100%;
 
         span {
             color: white;
-            margin-top: 2rem;
+            margin: 15px 0;
+            
+            
         }
 
         span:hover {
             color: #f6c72e;
             cursor: pointer;
+            
+        }
+
+        img {
+            height: 85px;
+            margin : 15px 0;
         }
     }
 
-    button {
-        background: #902326;
-        color: #f8f9fa;
-        padding: 0.8rem 2rem;
-        border-radius: 50px;
-        font-weight: 700;
-        font-size: 1.1rem;
-        border: 1px solid #e9ecef;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-
-        &:hover {
-            background: #f8f9fa;
-            color: #902326;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(144, 35, 38, 0.2);
-        }
+    div:hover {
+        background-color: rgba(255, 255, 255, 0.042);
     }
+
+   
 
     h2 {
         color: #ffffff;
         text-align: center;
+    
     }
 }
 
@@ -139,7 +142,7 @@ body {
 
         .buttons {
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
         }
     }
 

@@ -20,8 +20,8 @@
   }
 
    span {
-    background: #f8f9fa;
-    color: #902326;
+    background: #902326; 
+    color: #f8f9fa;
     padding: 0.8rem 2rem;
     border-radius: 50px;
     font-weight: 700;
@@ -32,8 +32,8 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 
     &:hover {
-      background: #902326;
-      color: white;
+      background: #f8f9fa;
+      color: #902326;
       transform: translateY(-3px);
       box-shadow: 0 10px 20px rgba(144, 35, 38, 0.2);
     }
@@ -158,7 +158,7 @@
     font-size: 1.1rem;
     border: 1px solid #e9ecef;
     transition: all 0.3s ease;
-    cursor: default;
+    cursor: pointer;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 
     &:hover {

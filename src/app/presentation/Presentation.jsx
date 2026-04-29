@@ -75,7 +75,7 @@ const Presentation = () => {
       </div>
 
           <div className={styles.button}>
-            <button>Voir notre catalogue</button>
+            <a href="/fournisseurs"><button>Voir notre catalogue</button></a>
           </div>
          
 

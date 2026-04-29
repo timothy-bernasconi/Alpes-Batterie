@@ -6,7 +6,9 @@ const footerData = [
     isLink: true,
     items: [
       { label: "Présentation", path: "/presentation" },
-      { label: "Nos Agences", path: "/agences" },
+      { label: "Alpes Batteries Annemasse", path: "/agences/annemasse" },
+      { label: "Alpes Batteries Thonon", path: "/agences/thonon" },
+      { label: "Alpes Batteries Sallanches", path: "/agences/sallanches" },
       {label : "Nos Fournisseurs", path : "/fournisseurs"},
       { label: "Actualités", path: "/actualites" },
       { label: "Produits", path: "/produits" },
@@ -56,15 +58,7 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className={styles.divLogo}>
-        <div className={styles.logo}>
-          <img 
-            src="./assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png" 
-            alt="Logo Alpes Batteries" 
-          />
-        </div>
-      </div>
-
+      
       <div className={styles.bottomBar}>
         <p>© {new Date().getFullYear()} — Site réalisé par <a href="https://www.agirencom.com/">AgirEnCom</a> — Tous droits réservés.</p>
         <div className={styles.socials}>

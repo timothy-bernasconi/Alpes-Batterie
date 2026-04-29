@@ -2,7 +2,7 @@
   min-height: 100vh;
   margin-top: 80px;
   background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
-              url('/assets/batterie.jpg') center/cover no-repeat fixed; // Image fixe au scroll
+              url('/assets/batterie.jpg') center/cover no-repeat fixed; 
   display: flex;
   align-items: center;
   padding: 6rem 2rem;
@@ -53,7 +53,7 @@
 
   .expertCard {
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px); // Effet verre dépoli
+    backdrop-filter: blur(10px); 
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 3rem 2rem;
     width: 280px;
@@ -79,18 +79,24 @@
 
     .revealText {
       max-height: 0;
-      opacity: 0;
       transition: all 0.4s ease;
-      p { font-size: 0.9rem; color: rgba(255,255,255,0.6); }
+      opacity: 0;
+
+      p { font-size: 0.9rem; color: rgba(255,255,255,0.6);
+       }
     }
 
     &:hover {
       background: rgba(144, 35, 38, 0.2);
       border-color: #902326;
-      transform: translateY(-10px);
 
-      .iconWrapper { transform: scale(1.2) translateY(-5px); color: #fff; }
-      .revealText { max-height: 100px; opacity: 1; margin-top: 1rem; }
+      .revealText {
+        opacity: 1;
+      }
+  
+ 
+      
+              
     }
   }
 
@@ -127,4 +133,9 @@
 @media (max-width: 768px) {
   .wrapper .header h1 { font-size: 2.5rem; }
   .expertCard { width: 100%; }
+
+  .actions {
+    flex-direction: column;
+    text-align: center;
+  }
 }

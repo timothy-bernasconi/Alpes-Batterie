@@ -1,9 +1,13 @@
 .container {
+
+  .paragraph {
+    padding: 25px 25px;
+  }
   
 
     p{
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .imgWrapper {
@@ -29,7 +33,7 @@
         align-items: center;
         
 
-          button {
+    button {
      background: #902326;
     color: #f8f9fa;
     padding: 0.8rem 2rem;
@@ -76,7 +80,7 @@
     margin: 2rem 0;
 
     .logo {
-    height: 100px;
+    height: 200px;
     width: auto;
 }
 
@@ -84,3 +88,13 @@
 }
 
 
+@media (max-width: 767px) {
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+
+
+
+}

@@ -13,10 +13,8 @@
 .wrapper {
    
     flex: 0 1 auto !important;
-    
-
-    width: 90% !important;
-    max-width: 650px !important;
+    width: 100% !important;
+    max-width: 850px !important;
     margin: 0 auto !important; 
     
 
@@ -179,7 +177,7 @@
     }
 
     .wrapper {
-        width: 95% !important;
+        
         padding: 1.5rem !important;
         margin: 0 auto !important;
         gap: 1.2rem;

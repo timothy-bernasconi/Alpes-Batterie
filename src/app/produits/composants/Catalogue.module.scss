@@ -103,3 +103,24 @@ $shadow-heavy: 0 12px 50px rgba(0, 0, 0, 0.7);
     width: 550px !important; 
     height: 770px !important;
 }
+
+.button {
+     display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: -4rem 0 1rem;
+
+    a {
+      text-decoration: none;
+      padding: 1.2rem 2.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      border-radius: 4px;
+    }
+    .secondary {
+      border: 2px solid white;
+      color: white;
+      &:hover { background: white; color: black; }
+    }
+}

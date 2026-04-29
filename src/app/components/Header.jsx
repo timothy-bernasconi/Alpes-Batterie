@@ -54,7 +54,7 @@ const Header = () => {
         <li><Link href="/fournisseurs" onClick={closeMenu}>Nos Fournisseurs</Link></li>
         <li><Link href="/actualites" onClick={closeMenu}>Actualités</Link></li>
         <li><Link href="/produits" onClick={closeMenu}> Produits</Link></li>
-        <li><Link href="/competences" onClick={closeMenu}>Nos Compétences</Link></li>
+        {/* <li><Link href="/competences" onClick={closeMenu}>Nos Compétences</Link></li> */}
         <li><Link href="/contact" onClick={closeMenu}>Contact</Link></li>
       </ul>
     </nav>

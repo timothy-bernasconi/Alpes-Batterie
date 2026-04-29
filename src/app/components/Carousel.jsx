@@ -4,49 +4,37 @@ import { useState } from 'react';
 import Image from 'next/image'; 
 import styles from './Carousel.module.scss';
 
-const slides = [
-  { id: 1, title: "Team 1", img: "/assets/event/background.png" },
-  { id: 2, title: "Team 2", img: "/assets/event/carouselTeam.jpg" },
-  { id: 3, title: "Team 3", img: "/assets/event/carouselTeam1.jpg" },
-  { id: 4, title: "Team 4",  img: "/assets/event/carouselTeam2.jpg" },
-  {id : 5, title : "Team 5", img : "/assets/event/carouselTeam3.jpg"}
-];
-
-export default function Carousel() {
+function Carousel({ data }) { 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const nextSlide = () => setActiveIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  const prevSlide = () => setActiveIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  const nextSlide = () => setActiveIndex((prev) => (prev === data.length - 1 ? 0 : prev + 1));
+  const prevSlide = () => setActiveIndex((prev) => (prev === 0 ? data.length - 1 : prev - 1));
 
   return (
     <section className={styles.carouselContainer}>
-
-       <h3>Nos Évènements</h3>
       <div 
         className={styles.track} 
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
-
-
-        {slides.map((slide) => (
-          <div key={slide.id} className={styles.slide}>
-          
+    
+        {data.map((item) => (
+          <div key={item.id} className={styles.slide}>
             <Image 
-              src={slide.img} 
-              alt={`Agence de ${slide.title}`}
+              src={item.img} 
+              alt={item.title}
               fill
-              priority={slide.id === 1}
+              priority={data.indexOf(item) === 0} 
               sizes="100vw"
               className={styles.image}
             />
-      
-    
           </div>
         ))}
       </div>
 
-      <button className={`${styles.navButton} ${styles.prev}`} onClick={prevSlide} aria-label="Précédent">❮</button>
-      <button className={`${styles.navButton} ${styles.next}`} onClick={nextSlide} aria-label="Suivant">❯</button>
+      <button className={`${styles.navButton} ${styles.prev}`} onClick={prevSlide}>❮</button>
+      <button className={`${styles.navButton} ${styles.next}`} onClick={nextSlide}>❯</button>
     </section>
   );
 }
+
+export default Carousel;

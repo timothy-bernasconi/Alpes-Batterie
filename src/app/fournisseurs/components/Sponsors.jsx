@@ -16,7 +16,7 @@ const Sponsors = () => {
 
     <div className={styles.container}>
         <h2 className={styles.title}>Notre communauté </h2>
-        <p style={{fontWeight : "600", fontSize : "1.3rem"}}>Alpes Batterie, votre partenaire de choix. </p>
+        <p style={{fontWeight : "600", fontSize : "1.3rem"}}>Alpes Batteries, votre partenaire de choix. </p>
 
       <div className={styles.imgWrapper}><img src="/assets/Logo-Alpes-BATTERIES_AGIR-sans-baseline-1.png" alt="" /></div>
         
@@ -26,7 +26,8 @@ const Sponsors = () => {
         <p style={{fontSize : "1rem", padding: "0 20px", marginTop : "30px"}}>Vous avez un projet ou un défi à relever ? Alpes Batteries sponsorise les initiatives de notre territoire. Contactez-nous pour faire équipe.</p>
 
        <div className={styles.button}>
-        <button>Devenir partenaire</button></div>
+       <a href="mailto:annemasse@alpesbatteries.com"><button>Devenir partenaire</button></a> 
+       </div>
 
         <hr style={{marginTop: "2rem"}}/>
 

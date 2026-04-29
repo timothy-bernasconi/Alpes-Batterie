@@ -57,6 +57,11 @@
                 color: #333;
                 margin: 0;
             }
+
+            i {
+                font-size: 3rem;
+                color: #902326;
+            }
         }
     }
 }
@@ -64,7 +69,7 @@
 
 @media (max-width: 768px) {
     .container {
-        padding: 40px 15px;
+        padding: 40px 20px;
         
         .wrapper {
             flex-direction: column;

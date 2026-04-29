@@ -34,19 +34,39 @@ const ServicesTest = () => {
       
       <div className={styles.wrapper}>
         <div className={styles.group}>    
-          <h3><i className="fa-solid fa-star"></i> L'expertise au service de l'énergie</h3>
-          <p>Spécialiste reconnu dans le stockage et la conversion d’énergie, votre enseigne propose une expertise pointue en batteries, piles et solutions solaires. En collaborant avec des partenaires de prestige tels que Banner, Fulmen ou Varta, vous garantissez des produits d’une fiabilité exceptionnelle.</p>
+          <i className="fa-solid fa-star"></i>
+          <h3> Solutions de Démarrage</h3>
+          <p>Spécialiste du démarrage en Haute-Savoie, Alpes Batteries propose un stock permanent pour voitures, motos et poids lourds. Retrouvez les marques Varta, Banner et Fulmen. Nos batteries garantissent une puissance fiable et durable, adaptée aux conditions climatiques alpines, pour particuliers et professionnels.</p>
         </div> 
 
-        <div className={styles.group}>      
-          <h3><i className="fa-solid fa-people-group"></i> Accompagnement technique et complet</h3>
-          <p>Acteur de référence sur le marché de l'énergie, notre structure déploie une gamme complète allant du démarrage moteur aux systèmes industriels et éclairages techniques. Avec un stock permanent et une logistique réactive, nous assurons à nos clients une disponibilité immédiate et une performance durable.</p>
+        <div className={styles.group}>     
+          <i className="fa-solid fa-people-group"></i> 
+          <h3> Énergie Autonome et Solaire</h3>
+          <p>Optimisez votre indépendance avec nos solutions solaires et batteries à décharge lente. Nous fournissons panneaux, convertisseurs et chargeurs pour camping-cars ou sites isolés. Alpes Batteries vous accompagne dans la conception de systèmes d’énergie nomade performants, avec un matériel technique de haute qualité.</p>
         </div>     
 
         <div className={styles.group}>
-          <h3><i className="fa-solid fa-thumbs-up"></i> Proximité et logistique de performance</h3>
-          <p>Partenaire de confiance implanté en Haute-Savoie, nous érigeons l'accompagnement personnalisé à travers une gestion logistique de pointe sur le Grand Genève. En misant sur un ancrage territorial fort et des processus de distribution agiles, nous garantissons à votre entreprise fluidité et réactivité.</p>
+          <i className="fa-solid fa-battery"></i>
+          <h3> Piles et Accumulateurs</h3>
+          <p>Retrouvez un catalogue complet de piles et accumulateurs pour tous vos usages, du quotidien à l’industrie. Nous distribuons des solutions d'éclairage technique et des batteries spécifiques pour vos équipements professionnels. Alpes Batteries assure la fourniture de petite énergie avec une fiabilité maximale.</p>
         </div>
+
+        <div className={styles.group}>
+          <i className="fa-solid fa-truck"></i>
+          <h3> Livraison Gratuite (Pros)</h3>
+          <p>Alpes Batteries simplifie votre logistique avec une livraison hebdomadaire gratuite pour les professionnels. Nos tournées couvrent Annemasse, Thonon, Sallanches et les vallées environnantes (74/01). Profitez de la réactivité d'un partenaire local pour l'approvisionnement de votre flotte sans frais de transport supplémentaires.</p>
+        </div>
+
+        <div className={styles.group}>
+          <i className="fa-solid fa-wrench"></i>
+          <h3>Diagnostic et Conseil Expert (Pros)</h3>
+          <p>Bénéficiez de l'expertise Alpes Batteries dans nos agences d'Annemasse, Thonon et Sallanches. Nos techniciens réalisent le diagnostic gratuit de vos batteries et vous conseillent la solution la plus adaptée. Profitez d'un service de proximité pour tester, charger et entretenir durablement vos équipements.</p>
+        </div>
+
+        
+
+
+
       </div>
     </motion.div>
   );

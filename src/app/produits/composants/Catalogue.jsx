@@ -64,6 +64,8 @@ const Catalogue = () => {
           </div>
         )}
       </Document>
+      <div className={styles.button}>   <a href="https://www.bannerbatterien.com/fr/Affectations-batteries/VL-VUL" className={styles.secondary}>Rechercher une batterie</a></div>
+   
     </div>
   );
 };

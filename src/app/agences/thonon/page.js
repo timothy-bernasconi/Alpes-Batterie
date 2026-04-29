@@ -35,8 +35,8 @@ const actusThonon = {
 };
 
 const equipeThonon = [
-        { id: 1, nom: "Patrick", image: '/assets/equipe/patrick.png' },
-        { id: 2, nom: "Nicolas", image: '/assets/equipe/nicolas.png' }, 
+        { id: 1, nom: "Patrick", image: '/assets/equipe/patrick.jpeg' },
+        { id: 2, nom: "Nicolas", image: '/assets/equipe/nicolas.jpeg' }, 
     ]
 
     const presentationEquipe = "Votre agence de Thonon vous ouvre ses portes du lundi au samedi. Passez nous voir, le café est offert ! ";
