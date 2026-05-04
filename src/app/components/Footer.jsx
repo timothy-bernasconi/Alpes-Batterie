@@ -6,9 +6,7 @@ const footerData = [
     isLink: true,
     items: [
       { label: "Présentation", path: "/presentation" },
-      { label: "Alpes Batteries Annemasse", path: "/agences/annemasse" },
-      { label: "Alpes Batteries Thonon", path: "/agences/thonon" },
-      { label: "Alpes Batteries Sallanches", path: "/agences/sallanches" },
+      { label: "Nos agences", path: "/agences" },
       {label : "Nos Fournisseurs", path : "/fournisseurs"},
       { label: "Actualités", path: "/actualites" },
       { label: "Produits", path: "/produits" },

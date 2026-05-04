@@ -1,6 +1,39 @@
 .wrapper {
-    background-color: #f6c72e;
+  background: #1a1a1a;
+  height: auto;
+  margin: -1.6rem 0;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #f6c72e;
+    text-transform: uppercase;
+    padding-top: 75px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    padding: 100px;
+
+    i {
+      display: inline-block; 
+      font-size: 5rem;
+      color: white;
+      margin-top: -4rem;
+      transition: all 0.4s ease;
+    
+    }
+    i:hover {
+      color: #f6c72e;
+    }
 
     
-    
+  }
+}
+
+@media (max-width: 990px) {
+  .container { flex-direction: column; }
 }

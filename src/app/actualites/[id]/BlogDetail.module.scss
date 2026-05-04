@@ -63,8 +63,19 @@
       font-size: 1.15rem;
       line-height: 1.8;
       white-space: pre-wrap;
-      color: #444;
+      color: #707070;
     }
+
+    h1, h2 {
+      color: white;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    
   }
 
   .articleFooter {

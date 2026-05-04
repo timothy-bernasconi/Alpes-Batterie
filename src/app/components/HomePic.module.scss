@@ -1,3 +1,21 @@
+
+@keyframes entranceEffect {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -5,8 +23,8 @@
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 1000px;
-
   color: white;
+  border-bottom: 1px solid white;
 
   .bg {
     position: absolute;
@@ -17,26 +35,27 @@
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -1;
-    filter: brightness(60%);
+    filter: brightness(50%);
+  
   }
 
   .mainTitle {
     font-size: 5rem;
     position: relative;
     top: 8rem;
-    left: 0;
     color: white;
     text-transform: uppercase;
     text-align: center;
+    animation: entranceEffect 0.6s ease-in;
   }
 
   .secondTitle {
     font-size: 1.5rem;
     position: relative;
     top: 6rem;
-    left: 0;
-    color: rgb(197, 196, 196);
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
+    animation: entranceEffect 0.6s ease-in;
   }
 
   .group {
@@ -46,70 +65,108 @@
     gap: 85px;
     flex-wrap: wrap;
     padding-bottom: 150px;
-
-    i {
-      font-size: 2.5rem;
-      text-shadow: 1px 1px 2px rgba(121, 119, 119, 0.426);
-      color: #9e0906;
-    }
+    margin-top: 2rem;
 
     .wrapper {
       position: relative;
       top: 7rem;
       height: 300px;
       width: 220px;
-      padding: 12px 12px;
-      background-color: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.459);
-      backdrop-filter: blur(7px);
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
       text-align: center;
       border-radius: 15px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      animation: myAnim 1s ease 0s 1 normal;
-      transition: 0.3s ease-in-out;
+      overflow: hidden; 
+      
 
-      a {
-        text-decoration: none;
+      animation: entranceEffect 0.8s ease-out both;
+
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) { animation-delay: #{$i * 0.1s}s; }
+      }
+
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(
+          to right, 
+          transparent, 
+          rgba(255, 255, 255, 0.15), 
+          transparent
+        );
+        transform: skewX(-25deg);
+      }
+
+      &:hover {
+        transform: translateY(-8px); 
+        background: rgba(255, 255, 255, 0.08);
+        border-color: #f6c72e;
+
+        &::after {
+          animation: shine 0.6s ease-in-out;
+        }
+
+        i {
+          color: #f6c72e;
+        }
+
+        button {
+          background-color: #f6c72e;
+          color: black;
+
+        }
+
+    
+      }
+
+      i {
+        font-size: 2.5rem;
+        color: #9e0906;
+        margin-bottom: 15px;
+        transition: color 0.3s ease; 
       }
 
       .thirdTitle {
         text-transform: uppercase;
         color: white;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.088);
         font-weight: 600;
+        margin-bottom: 10px;
       }
 
       .button {
-        height: 25px;
+        height: 35px;
         width: 135px;
-        border-radius: 15px;
+        border-radius: 20px;
         border: none;
-        padding: 15px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
         background-color: #9e0906;
         color: #f5f5f5;
         text-transform: uppercase;
         font-size: 0.8rem;
         cursor: pointer;
-        transition: 0.4s ease-in-out;
+        transition: background-color 0.3s ease;
 
-        &:hover {
-          color: rgb(255, 255, 255);
-          background-color: #f6c72e;
-          color: #9e0906;
-          font-weight: 500;
+        
         }
       }
     }
+  }
 
-    .wrapper:hover {
-      transform: translateY(-5px);
-    }
+
+@media (max-width: 990px) {
+  .container {
+    .mainTitle { font-size: 3rem; }
+    .wrapper { top: 0; margin-top: 20px; }
+    .group { gap: 40px; }
   }
 }

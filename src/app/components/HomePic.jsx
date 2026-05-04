@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './HomePic.module.scss'
 
-const HomePic = ({titre, sousTitre, test}) => {
+const HomePic = ({titre, sousTitre, test, img}) => {
   return (
     <div className={styles.container}>
         <h1 className={styles.mainTitle}>{titre}</h1>
         <h2 className={styles.secondTitle}>{sousTitre}</h2>
         <h3 className={styles.electricText}>{test}</h3>
-        <img src="/assets/homepic.jpg" alt="" className={styles.bg}/>
+        <img src={img} alt="" className={styles.bg}/>
         
         <div className={styles.group}>
                 <div className={styles.wrapper}>

@@ -61,7 +61,7 @@ export default function BlogDetail() {
         </div>
         
 
-        <h1 className={styles.mainTitle}>{article.Titre}</h1>
+        <h2 className={styles.mainTitle}>{article.Titre}</h2>
       </header>
 
    
@@ -72,11 +72,29 @@ export default function BlogDetail() {
       )}
 
     
-      <section className={styles.articleContent}> 
-        <p className={styles.paragraphs}>{article.Article}</p>
+      <section className={styles.articleContent}>
+
+        <h1>{styles.h1}{article.h1}</h1>
+
+        <p className={styles.paragraphs}>{article.premierParagraphe}</p>
+
+        <h2>{article.h2}</h2>
+
+        <p className={styles.paragraphs}>{article.secondParagraphe}</p>
+
+       <h2>{article.secondh2}</h2> 
+
+       <p className={styles.paragraphs}>{article.troisiemeParagraphe}</p>
+
+       <h2>{article.troisiemeh2}</h2> 
+
+       <p className={styles.paragraphs}>{article.quatriemeParagraphe}</p>
+
+
+     
       </section>
       <footer className={styles.articleFooter}>
-        <p>Merci de votre lecture. Restez connectés pour plus d'innovations.</p>
+        <a href='/actualites'><p>Retour aux articles</p></a>
       </footer>
     </article>
   );

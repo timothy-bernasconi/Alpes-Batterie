@@ -1,87 +1,107 @@
+// 1. DÉFINITION DES ANIMATIONS (À la racine)
+@keyframes entranceEffect {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearanceEffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .wrapper {
-  margin-top: 120px; 
+  margin-top: 120px;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   padding: 4rem 2rem;
   color: #2d3436;
   line-height: 1.8;
- 
+
 
   .locations {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 4rem;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
 
-  a{
-    text-decoration: none;
-  }
+    a {
+      text-decoration: none;
+    }
 
-   span {
-    background: #902326; 
-    color: #f8f9fa;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 1.1rem;
-    border: 1px solid #e9ecef;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    span {
+      background: #902326;
+      color: #f8f9fa;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: 1px solid #e9ecef;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      animation: appearanceEffect 1s ease-in both; 
 
-    &:hover {
-      background: #f8f9fa;
-      color: #902326;
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(144, 35, 38, 0.2);
+      &:hover {
+        background: #f8f9fa;
+        color: #902326;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(144, 35, 38, 0.2);
+      }
     }
   }
-}
-
-
-.button {
-  button {
-   
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 600;
-
-    &:hover {
-      background-color: #6d1a1c;
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-  }
-}
 
   .headerSection {
     text-align: center;
     margin-bottom: 4rem;
 
     h1 {
-        font-size: 3.5rem;
-    color: #9e0906;
-    text-transform: uppercase;
-    text-align: center;
-
-    
+      font-size: 3.5rem;
+      color: #9e0906;
+      text-transform: uppercase;
+      text-align: center;
+      animation: entranceEffect 0.8s ease-out both; 
     }
 
     .introText {
       font-size: 1.4rem;
       color: #636e72;
       max-width: 800px;
-      margin: -2rem auto;
+      margin: -2rem auto 2rem auto;
+       animation: entranceEffect 0.8s ease-in-out;
     }
   }
+
+  .picture {
+    background-image: url('/assets/alpes_annemasse.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+  }
+
 
   .gridServices {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    animation: entranceEffect 0.6s ease-in-out;
   }
 
   .serviceCard {
@@ -98,76 +118,94 @@
       border-color: rgba(144, 35, 38, 0.2);
     }
 
+    i {
+      color: #902326;
+      font-size: 2.5rem;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
     h3 {
       color: #902326;
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
       text-align: center;
+      text-transform: uppercase;
     }
 
     p {
       font-size: 0.95rem;
       color: #636e72;
       margin: 0;
+      text-align: center;
     }
   }
 
-    .picture {
-  background-image: url('/assets/alpes_annemasse.jpg');
-  background-size: cover;      
-  background-position: center; 
-  width: 100%;                
-  height: 400px;             
-  display: block;  
-  
-  img {
-    width: 100%;
-  }
-}
 
-.deliverySection {
+  .deliverySection {
     margin-top: 5rem;
     background: #fdfdfd;
     padding: 3rem;
     border-radius: 20px;
     border-left: 5px solid #902326;
-    
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+
     h3 {
       color: #902326;
       margin-top: 0;
+      font-size: 1.5rem;
     }
-
-    
   }
 
   .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
+
+    animation: appearanceEffect 0.8s ease-in both;
+    animation-delay: 0.6s; 
 
     button {
-    background: #902326;
-    color: #f8f9fa;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 1.1rem;
-    border: 1px solid #e9ecef;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      background: #902326;
+      color: #f8f9fa;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(144, 35, 38, 0.1);
 
-    &:hover {
-      background: #f8f9fa;
-      color: #902326;
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(144, 35, 38, 0.2);
+      &:hover {
+        background: #f8f9fa;
+        color: #902326;
+        border-color: #902326;
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 10px 20px rgba(144, 35, 38, 0.2);
+      }
     }
   }
+}
+
+// 3. RESPONSIVE
+@media (max-width: 990px) {
+  .wrapper {
+    margin-top: 80px;
+    padding: 2rem 1rem;
+
+    .headerSection h1 {
+      font-size: 2.2rem;
     }
-        
+
+    .locations {
+      gap: 0.8rem;
+      span {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+      }
     }
+  }
+}

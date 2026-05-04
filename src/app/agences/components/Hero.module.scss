@@ -1,3 +1,27 @@
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    // On garde le centrage vertical (-50%) pendant que l'on glisse de la gauche
+    transform: translate(-60px, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// 2. STRUCTURE DU COMPOSANT
 .container {
   position: relative;
   width: 100%;
@@ -11,37 +35,40 @@
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); // Centrage fixe, pas d'anim ici
     z-index: -1; 
     filter: brightness(40%);
   }
 
   .mainTitle {
     position: absolute;
-    left: 5%;        
-    top: 30%;        
-    transform: translateY(-50%); 
-    
+    left: 5%; 
+    top: 30%; 
     z-index: 10;
     color: #ffffff;
     font-size: 3.5rem; 
-    max-width: 40%;  
+    max-width: 40%; 
     text-transform: uppercase;
     font-weight: 800;
     line-height: 1.1;
-  
+
+    // Animation du titre
+    animation: slideFromLeft 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation-delay: 0.2s;
   }
 
+  .phonesPosition {
+    position: absolute;
+    left: 5%; 
+    top: 55%; 
+    z-index: 10;
+    display: flex;
+    gap: 20px;
 
-
-.phonesPosition {
-  position: absolute;
-  left: 5%;           
-  top: 55%;          
-  z-index: 10;
-  display: flex;
-  gap: 20px;
-}
+    // Animation des boutons
+    animation: slideFromBottom 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation-delay: 0.6s;
+  }
 
   .btn {
     background: #902326;
@@ -52,8 +79,6 @@
     font-size: 1.5rem;
     border: 1px solid #e9ecef;
     transition: all 0.3s ease;
-    
-
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 
@@ -62,42 +87,42 @@
       color: #902326;
       transform: translateY(-3px);
       box-shadow: 0 10px 20px rgba(144, 35, 38, 0.2);
-    
-  }
+    }
   }
 }
 
-
-
-  @media (max-width: 767px) {
+// 3. RESPONSIVE (MOBILE)
+@media (max-width: 767px) {
   .container {
     .mainTitle {
-
       left: 50%;
+      top: 18%; 
+      width: 90%; 
+      max-width: 100%; 
+      text-align: center; 
+      font-size: 2.2rem; 
+      
+      // On reset le transform pour le centrage horizontal mobile
+      animation: slideFromBottom 1s ease-out both;
       transform: translateX(-50%); 
-      width: 90%;          
-      max-width: 100%;     
-      text-align: center;  
-      font-size: 2.2rem;  
-      top: 18%;     
     }
- .phonesPosition {
 
+    .phonesPosition {
       left: 50%;
-      transform: translateX(-50%);
       top: 35%; 
+      transform: translateX(-50%);
       display: flex;
       flex-direction: column; 
-      align-items: center;   
-      
-
+      align-items: center; 
       width: 100%;
       gap: 15px; 
+
+      animation: slideFromBottom 0.8s ease-out both;
+      animation-delay: 0.4s;
     }
 
     .btn {
-  
-      width: 100%;     
+      width: 100%; 
       max-width: 350px; 
       text-align: center;
       font-size: 1.2rem;
@@ -105,9 +130,3 @@
     }
   }
 }
-
-
-
-
-
-

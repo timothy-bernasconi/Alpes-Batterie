@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem 5%;
   z-index: 1000;
@@ -39,6 +39,7 @@
     height: 85px;
     width: auto;
     display: block;
+    margin-top: -15px;
   }
 }
 
@@ -153,7 +154,7 @@
   .navMenu {
     position: fixed;
     top: 0;
-    right: -100%; 
+    right: -160%; 
     width: 100%;
     height: 100vh;
     background-color: #902326;
@@ -197,5 +198,24 @@
         color: #902326 !important;
       }
     }
+  }
+}
+
+@media (max-width : 990px) {
+  .header {
+
+    .logo {
+
+  img {
+    height: 85px;
+    width: auto;
+    margin-top: -15px;
+    position: relative;
+    top : 0;
+    left: -4rem;
+    
+  }
+  
+}
   }
 }

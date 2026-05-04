@@ -6,7 +6,7 @@ import HomePic from './components/HomePic';
 import ReseauxSociaux from './components/ReseauxSociaux';
 
 
-const imageEvent = [ { id: 1, title: "Team 1", img: "/assets/event/background.png" },
+const imageEvent = [ 
  { id: 2, title: "Team 2", img: "/assets/event/carouselTeam.jpg" },
  { id: 3, title: "Team 3", img: "/assets/event/carouselTeam1.jpg" },
  { id: 4, title: "Team 4",  img: "/assets/event/carouselTeam2.jpg" },
@@ -25,15 +25,16 @@ const page = () => {
       <HomePic 
       titre = "Alpes Batteries"
       sousTitre="La référence en matière de batteries en Haute-Savoie"
+      img = "/assets/homepic.jpg"
       />
    
      
 
         <ServicesTest />
         <SectionTest />
-        <Carousel data = {imageEvent}
-        />
         <ReseauxSociaux />
+        <Carousel data = {imageEvent}/>
+        
         
   
    

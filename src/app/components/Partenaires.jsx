@@ -1,7 +1,30 @@
-import React from 'react'
+'use client';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Partenaires.module.scss'
 
 const Partenaires = () => {
+
+    const sectionRef = useRef(null);
+      const [isVisible, setIsVisible] = useState(false);
+    
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+              observer.unobserve(entry.target);
+            }
+          },
+          { threshold: 0.1 } 
+        );
+    
+        if (sectionRef.current) {
+          observer.observe(sectionRef.current);
+        }
+    
+        return () => observer.disconnect();
+      }, []);
+  
 
    
     const partners = [
@@ -29,18 +52,9 @@ const Partenaires = () => {
 
 
     return (
-        <div className={styles.partnersSection}>
-            <h2>Nos Fournisseurs</h2>
-
-            <p style={{fontSize : "1.3rem"}}>Chez Alpes Batteries, nous croyons qu'une solution d'énergie ne vaut que par la qualité des composants qui la constituent. C'est pourquoi nous avons tissé des relations de confiance avec les leaders mondiaux et européens de la fabrication d'accumulateurs.</p>
-
-            <p style={{color : "#9f9f9f", paddingTop:"2rem", fontSize : "1.1rem"}}>Nous ne nous contentons pas de distribuer des produits ; nous sélectionnons des partenaires qui partagent nos exigences en matière de durabilité et de performance. Nos fournisseurs sont choisis selon des critères stricts : </p>
-
-            <div className={styles.container}>
-              <span>Disponibilité</span>
-              <span>Fiabilité</span>
-              <span>Efficacité</span>
-            </div>
+        <div  ref={sectionRef} 
+          className={`${styles.partnersSection} ${isVisible ? styles.animate : ''}`}>
+            <h2>Nos Fournisseurs</h2>         
 
               <div className={styles.gridWrapper}>
                 {mainPArtner.map((item, index) => (
@@ -52,6 +66,8 @@ const Partenaires = () => {
 
               </div>
 
+               
+
 
 
 
@@ -62,6 +78,7 @@ const Partenaires = () => {
       </div>
     ))}
   </div>
+           
 </div>
     )
 }

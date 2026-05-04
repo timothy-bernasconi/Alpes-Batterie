@@ -40,7 +40,7 @@ const ServicesTest = () => {
         </div> 
 
         <div className={styles.group}>     
-          <i className="fa-solid fa-people-group"></i> 
+          <i className="fa-solid fa-sun"></i> 
           <h3> Énergie Autonome et Solaire</h3>
           <p>Optimisez votre indépendance avec nos solutions solaires et batteries à décharge lente. Nous fournissons panneaux, convertisseurs et chargeurs pour camping-cars ou sites isolés. Alpes Batteries vous accompagne dans la conception de systèmes d’énergie nomade performants, avec un matériel technique de haute qualité.</p>
         </div>     
@@ -54,7 +54,7 @@ const ServicesTest = () => {
         <div className={styles.group}>
           <i className="fa-solid fa-truck"></i>
           <h3> Livraison Gratuite (Pros)</h3>
-          <p>Alpes Batteries simplifie votre logistique avec une livraison hebdomadaire gratuite pour les professionnels. Nos tournées couvrent Annemasse, Thonon, Sallanches et les vallées environnantes (74/01). Profitez de la réactivité d'un partenaire local pour l'approvisionnement de votre flotte sans frais de transport supplémentaires.</p>
+          <p>Alpes Batteries simplifie votre logistique avec une livraison hebdomadaire gratuite pour les professionnels. Nos tournées couvrent le Chablais, le pays du MontBlanc, la Vallée de l'Arves et le Genevois. Profitez de la réactivité d'un partenaire local pour l'approvisionnement de votre flotte sans frais de transport supplémentaires.</p>
         </div>
 
         <div className={styles.group}>
