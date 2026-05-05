@@ -1,11 +1,13 @@
 import React from 'react'
 import Presentation from './Presentation'
+import Livraison from './Livraison'
 import styles from './page.module.scss'
 
 const page = () => {
   return (
     <div className={styles.container}>
    <Presentation />
+   <Livraison />
 </div>
   )
 }

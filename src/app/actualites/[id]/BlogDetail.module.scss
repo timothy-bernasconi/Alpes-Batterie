@@ -63,7 +63,7 @@
       font-size: 1.15rem;
       line-height: 1.8;
       white-space: pre-wrap;
-      color: #707070;
+      color: #fcfcfc;
     }
 
     h1, h2 {
@@ -85,5 +85,9 @@
     font-style: italic;
     color: #666;
     text-align: center;
+
+    p {
+      color: white;
+    }
   }
 }

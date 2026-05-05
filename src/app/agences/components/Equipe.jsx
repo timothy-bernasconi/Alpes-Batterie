@@ -36,7 +36,6 @@ const Equipe = ({ titre, presentationEquipe, equipeAnnemasse }) => {
               <img src={membre.image} alt={membre.nom} className={styles.photo} />
             </div>
         
-            <p className={styles.nomMembre}>{membre.nom}</p>
           </div>
         ))}
       </div>

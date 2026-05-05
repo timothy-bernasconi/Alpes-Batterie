@@ -1,7 +1,7 @@
 @keyframes slideFromLeft {
   0% {
     opacity: 0;
-    // On garde le centrage vertical (-50%) pendant que l'on glisse de la gauche
+
     transform: translate(-60px, -50%);
   }
   100% {
@@ -52,7 +52,7 @@
     font-weight: 800;
     line-height: 1.1;
 
-    // Animation du titre
+  
     animation: slideFromLeft 1s cubic-bezier(0.23, 1, 0.32, 1) both;
     animation-delay: 0.2s;
   }
@@ -95,20 +95,19 @@
 @media (max-width: 767px) {
   .container {
     .mainTitle {
-      left: 50%;
-      top: 18%; 
-      width: 90%; 
+      left: 0%;
+      top: 20%; 
+      width: 100%; 
       max-width: 100%; 
       text-align: center; 
       font-size: 2.2rem; 
-      
-      // On reset le transform pour le centrage horizontal mobile
+    
       animation: slideFromBottom 1s ease-out both;
       transform: translateX(-50%); 
     }
 
     .phonesPosition {
-      left: 50%;
+      left: 0%;
       top: 35%; 
       transform: translateX(-50%);
       display: flex;

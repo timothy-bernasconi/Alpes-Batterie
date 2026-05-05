@@ -1,12 +1,12 @@
 .wrapper {
 max-width: 350px;
-  height: auto;
+  height: 320px;
   padding: 1.1rem;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.4); 
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); 
   font-family: 'Segoe UI', Roboto, sans-serif;
-  margin: 14rem 70px 0rem auto;
+  margin: 18rem 70px 0rem auto;
   background: rgba(0, 0, 0, 0.216); 
   backdrop-filter: blur(25px); 
   -webkit-backdrop-filter: blur(25px); 
@@ -76,8 +76,7 @@ max-width: 350px;
 @media (max-width: 767px) {
   .wrapper {
  
-    margin: 28rem auto; 
-    width: 90%; 
+   margin: 34rem auto ;
     max-width: 320px; 
     
 

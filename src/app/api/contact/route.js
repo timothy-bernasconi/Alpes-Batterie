@@ -3,9 +3,20 @@ import nodemailer from 'nodemailer';
 
 export const runtime = 'nodejs';
 
+
+const emailsAgences = {
+  annemasse: 'annemasse@alpesbatteries.com',
+  thonon: 'thonon@alpesbatteries.com',
+  sallanches: 'sallanches@alpesbatteries.com'
+};
+
 export async function POST(req) {
   try {
     const { name, firstName, company, email, phone, type, subject, message } = await req.json();
+
+
+    const emailDestinataire = emailsAgences[subject] || 'contact@alpesbatteries.com';
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -16,20 +27,19 @@ export async function POST(req) {
 
     const mailOptions = {
       from: process.env.GMAIL_USER,
-      to: 'tim.bernasconi1@gmail.com', 
-      replyTo: email, 
+      to: emailDestinataire, 
+      replyTo: email,
       subject: `Nouveau message pour Alpes Batteries - Agence : ${subject.toUpperCase()}`,
       html: `
         <div style="font-family: sans-serif; border: 1px solid #ddd; padding: 20px; color: #333;">
           <h2 style="color: #902326;">Nouveau contact site Alpes Batteries</h2>
+          <p><strong>Agence concernée :</strong> ${subject.toUpperCase()}</p>
           <p><strong>Type de demande :</strong> ${type}</p>
-          <p><strong>Agence concernée :</strong> ${subject}</p>
           <hr />
           <p><strong>Client :</strong> ${firstName} ${name}</p>
           <p><strong>Société :</strong> ${company || 'Non renseignée'}</p>
           <p><strong>Email :</strong> ${email}</p>
-          <p><strong>Phone :</strong> ${phone}</p>
-
+          <p><strong>Téléphone :</strong> ${phone}</p>
           <br />
           <p><strong>Message :</strong></p>
           <div style="background: #f4f4f4; padding: 15px; border-radius: 5px;">

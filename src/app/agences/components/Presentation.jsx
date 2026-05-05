@@ -52,6 +52,14 @@ const Presentation = () => {
           <h3>Point de collecte et Recyclage</h3>
           <p>Soucieux de l'environnement montagnard, nos magasins sont des points de collecte agréés. Rapportez-nous vos batteries usagées pour leur valorisation.</p>
         </div>
+
+        <div className={styles.card}>
+          <i className="fa-solid fa-solar-panel"></i>
+          <h3>Installation panneaux solaires </h3>
+          <p>Expert en énergie durable, nos magasins vous accompagnent de l'étude à l'installation. Sollicitez-nous pour vos panneaux solaires et optimisez votre consommation..</p>
+        </div>
+
+
       </div>
     </div>
   );

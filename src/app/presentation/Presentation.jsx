@@ -69,17 +69,6 @@ const Presentation = () => {
 
       </div>
 
-      <div className={styles.deliverySection}>
-        <h3>Vos magasins ALPES BATTERIES vous livrent toutes les semaines sur les communes suivantes:</h3>
-
-        <p>SALLANCHES ; PASSY ; SAINT GERVAIS ; COMBLOUX ; CORDON ; MEGEVE ; PRAZ SUR ARLY ; LES HOUCHES ; CHAMONIX ; ARGENTIERES ; VALLORCINE ; MAGLAND ;  LES CARROZ ;  FLAINE ; CLUSES</p>
-
-        <p>* Nous contacter pour connaître les jours de la livraison chez vous.</p>
-
-    
-
-      </div>
-
           <div className={styles.button}>
             <a href="/fournisseurs"><button>Voir notre catalogue</button></a>
           </div>

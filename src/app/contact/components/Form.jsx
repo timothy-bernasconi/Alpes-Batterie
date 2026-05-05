@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import styles from './Form.module.scss';
 
+// mes consts; pour chaque input ou honeypot/captachanswer/securitynum
+
 function MyForm() {
 
   const [name, setName] = useState("");
@@ -10,7 +12,7 @@ function MyForm() {
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
   const [type, setType] = useState("technical");
-  const [subject, setSubject] = useState("");
+  const [subject, setSubject] = useState("annemasse");
   const [message, setMessage] = useState("");
   const [phone,setPhone] = useState("");
   const [status, setStatus] = useState("");
@@ -19,6 +21,7 @@ function MyForm() {
   const [captchaAnswer, setCaptchaAnswer] = useState("");
   const [securityNum, setSecurityNum] = useState({ a: 0, b: 0 });
 
+// mise en place du securitynum via l'use Effect
 
   useEffect(() => {
     setSecurityNum({
@@ -30,7 +33,6 @@ function MyForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-
     if (honeypot !== "") return;
 
 
@@ -38,6 +40,8 @@ function MyForm() {
       setStatus("Le résultat du calcul est incorrect.");
       return;
     }
+
+    // si calcul ok; le message s'envoi //
 
     setLoading(true);
     setStatus("Envoi en cours...");
@@ -157,3 +161,10 @@ function MyForm() {
 }
 
 export default MyForm;
+
+// option 1 : sur 1 form, permettre de renvoyer sur une adresse en fonction de ce que l'on a sélectionner
+
+// option 2 : Créer 3 forms
+
+// option 3 : pas d'option 3
+

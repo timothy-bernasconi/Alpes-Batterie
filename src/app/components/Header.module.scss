@@ -70,18 +70,37 @@
       }
     }
 
-    
+    // ON APPLIQUE LA CLASSE SUR LE LI
+    &.activeLink {
+      a {
+        color: #f6c72ef6 !important; 
+        font-weight: 800;
+      }
+
+  
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #f6c72ef6;
+      }
+    }
+
     &.hasDropdown {
       &:hover {
         .dropdown {
           opacity: 1;
           visibility: visible;
-          transform: translateX(-50%) translateY(0);
+          
         }
       }
     }
   }
 }
+
 
 .dropdown {
   position: absolute;
@@ -154,7 +173,7 @@
   .navMenu {
     position: fixed;
     top: 0;
-    right: -160%; 
+    right: -110%; 
     width: 100%;
     height: 100vh;
     background-color: #902326;
@@ -165,7 +184,7 @@
     overflow-y: auto; 
 
     &.open {
-      right: 0; 
+      right: -33;
     }
 
     li {
